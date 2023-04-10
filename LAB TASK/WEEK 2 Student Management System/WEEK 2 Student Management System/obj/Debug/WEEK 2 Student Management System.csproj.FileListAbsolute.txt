@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2 Student Management System\WEEK 2 Student Management System\bin\Debug\WEEK 2 Student Management System.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2 Student Management System\WEEK 2 Student Management System\bin\Debug\WEEK 2 Student Management System.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2 Student Management System\WEEK 2 Student Management System\bin\Debug\WEEK 2 Student Management System.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2 Student Management System\WEEK 2 Student Management System\obj\Debug\WEEK 2 Student Management System.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2 Student Management System\WEEK 2 Student Management System\obj\Debug\WEEK 2 Student Management System.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2 Student Management System\WEEK 2 Student Management System\obj\Debug\WEEK 2 Student Management System.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2 Student Management System\WEEK 2 Student Management System\obj\Debug\WEEK 2 Student Management System.pdb

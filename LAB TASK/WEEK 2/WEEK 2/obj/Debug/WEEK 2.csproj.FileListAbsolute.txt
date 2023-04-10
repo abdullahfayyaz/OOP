@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2\WEEK 2\bin\Debug\WEEK 2.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2\WEEK 2\bin\Debug\WEEK 2.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2\WEEK 2\bin\Debug\WEEK 2.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2\WEEK 2\obj\Debug\WEEK 2.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2\WEEK 2\obj\Debug\WEEK 2.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2\WEEK 2\obj\Debug\WEEK 2.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 2\WEEK 2\obj\Debug\WEEK 2.pdb

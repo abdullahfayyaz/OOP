@@ -1,0 +1,10 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\bin\Debug\FIRE BOY.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\bin\Debug\FIRE BOY.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\bin\Debug\FIRE BOY.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\bin\Debug\EZInput.dll
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\bin\Debug\EZInput.xml
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\obj\Debug\FIRE BOY.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\obj\Debug\FIRE BOY.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\obj\Debug\FIRE BOY.csproj.CopyComplete
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\obj\Debug\FIRE BOY.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\FIRE BOY\FIRE BOY\obj\Debug\FIRE BOY.pdb

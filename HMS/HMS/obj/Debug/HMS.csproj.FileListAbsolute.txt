@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\HMS\HMS\bin\Debug\HMS.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\HMS\HMS\bin\Debug\HMS.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\HMS\HMS\bin\Debug\HMS.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\HMS\HMS\obj\Debug\HMS.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\HMS\HMS\obj\Debug\HMS.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\HMS\HMS\obj\Debug\HMS.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\HMS\HMS\obj\Debug\HMS.pdb

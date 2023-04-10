@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 1\WEEK 1\bin\Debug\selftask.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 1\WEEK 1\bin\Debug\selftask.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 1\WEEK 1\bin\Debug\selftask.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 1\WEEK 1\obj\Debug\selftask.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 1\WEEK 1\obj\Debug\selftask.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 1\WEEK 1\obj\Debug\selftask.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP\LAB TASK\WEEK 1\WEEK 1\obj\Debug\selftask.pdb

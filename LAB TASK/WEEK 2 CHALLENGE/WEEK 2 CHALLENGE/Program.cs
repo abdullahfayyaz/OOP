@@ -225,5 +225,4 @@ namespace WEEK_2_CHALLENGE
             file.Close();
         }
     }
-
 }

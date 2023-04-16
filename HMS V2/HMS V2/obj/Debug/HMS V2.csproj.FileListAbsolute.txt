@@ -1,0 +1,14 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V2\HMS V2\bin\Debug\HMS V2.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V2\HMS V2\bin\Debug\HMS V2.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V2\HMS V2\bin\Debug\HMS V2.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V2\HMS V2\obj\Debug\HMS V2.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V2\HMS V2\obj\Debug\HMS V2.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V2\HMS V2\obj\Debug\HMS V2.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V2\HMS V2\obj\Debug\HMS V2.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD TASK\HMS V2\HMS V2\bin\Debug\HMS V2.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD TASK\HMS V2\HMS V2\bin\Debug\HMS V2.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD TASK\HMS V2\HMS V2\bin\Debug\HMS V2.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD TASK\HMS V2\HMS V2\obj\Debug\HMS V2.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD TASK\HMS V2\HMS V2\obj\Debug\HMS V2.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD TASK\HMS V2\HMS V2\obj\Debug\HMS V2.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD TASK\HMS V2\HMS V2\obj\Debug\HMS V2.pdb

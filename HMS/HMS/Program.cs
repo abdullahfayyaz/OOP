@@ -514,7 +514,8 @@ namespace HMS
             bool flag = false;
             int i = 0;
             while (i < password.Length)
-            {
+            {\\\\\\\\\\\
+            
                 if ((password[i] > 63 && password[i] < 91) || (password[i] > 96 && password[i] < 123) || (password[i] > 47 && password[i] < 58) || (password[i] > 34 && password[i] < 39))
                 {
                     i++;

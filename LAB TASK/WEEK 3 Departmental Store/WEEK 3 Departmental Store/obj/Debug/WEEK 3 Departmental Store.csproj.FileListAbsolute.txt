@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 Departmental Store\WEEK 3 Departmental Store\bin\Debug\WEEK 3 Departmental Store.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 Departmental Store\WEEK 3 Departmental Store\bin\Debug\WEEK 3 Departmental Store.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 Departmental Store\WEEK 3 Departmental Store\bin\Debug\WEEK 3 Departmental Store.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 Departmental Store\WEEK 3 Departmental Store\obj\Debug\WEEK 3 Departmental Store.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 Departmental Store\WEEK 3 Departmental Store\obj\Debug\WEEK 3 Departmental Store.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 Departmental Store\WEEK 3 Departmental Store\obj\Debug\WEEK 3 Departmental Store.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 Departmental Store\WEEK 3 Departmental Store\obj\Debug\WEEK 3 Departmental Store.pdb

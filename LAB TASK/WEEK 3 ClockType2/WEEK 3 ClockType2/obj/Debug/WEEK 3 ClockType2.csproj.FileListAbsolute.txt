@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 ClockType2\WEEK 3 ClockType2\bin\Debug\WEEK 3 ClockType2.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 ClockType2\WEEK 3 ClockType2\bin\Debug\WEEK 3 ClockType2.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 ClockType2\WEEK 3 ClockType2\bin\Debug\WEEK 3 ClockType2.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 ClockType2\WEEK 3 ClockType2\obj\Debug\WEEK 3 ClockType2.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 ClockType2\WEEK 3 ClockType2\obj\Debug\WEEK 3 ClockType2.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 ClockType2\WEEK 3 ClockType2\obj\Debug\WEEK 3 ClockType2.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 3 ClockType2\WEEK 3 ClockType2\obj\Debug\WEEK 3 ClockType2.pdb

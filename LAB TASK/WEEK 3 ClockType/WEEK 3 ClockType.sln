@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEEK 3 ClockType", "WEEK 3 ClockType\WEEK 3 ClockType.csproj", "{F75F9922-0DD1-4C9E-A479-0BA90A2A76E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F75F9922-0DD1-4C9E-A479-0BA90A2A76E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75F9922-0DD1-4C9E-A479-0BA90A2A76E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75F9922-0DD1-4C9E-A479-0BA90A2A76E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75F9922-0DD1-4C9E-A479-0BA90A2A76E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A64CD844-34A4-452B-B0A5-329C3E59DA99}
+	EndGlobalSection
+EndGlobal

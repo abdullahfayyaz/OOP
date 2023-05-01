@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEKK 3\WEKK 3\bin\Debug\WEKK 3.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEKK 3\WEKK 3\bin\Debug\WEKK 3.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEKK 3\WEKK 3\bin\Debug\WEKK 3.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEKK 3\WEKK 3\obj\Debug\WEKK 3.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEKK 3\WEKK 3\obj\Debug\WEKK 3.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEKK 3\WEKK 3\obj\Debug\WEKK 3.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEKK 3\WEKK 3\obj\Debug\WEKK 3.pdb

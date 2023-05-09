@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 Library System\WEEK 4 Library System\bin\Debug\WEEK 4 Library System.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 Library System\WEEK 4 Library System\bin\Debug\WEEK 4 Library System.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 Library System\WEEK 4 Library System\bin\Debug\WEEK 4 Library System.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 Library System\WEEK 4 Library System\obj\Debug\WEEK 4 Library System.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 Library System\WEEK 4 Library System\obj\Debug\WEEK 4 Library System.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 Library System\WEEK 4 Library System\obj\Debug\WEEK 4 Library System.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 Library System\WEEK 4 Library System\obj\Debug\WEEK 4 Library System.pdb

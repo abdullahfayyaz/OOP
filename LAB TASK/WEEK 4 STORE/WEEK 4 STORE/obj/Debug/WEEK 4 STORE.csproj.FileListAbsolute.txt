@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 STORE\WEEK 4 STORE\obj\Debug\WEEK 4 STORE.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 STORE\WEEK 4 STORE\obj\Debug\WEEK 4 STORE.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 STORE\WEEK 4 STORE\bin\Debug\WEEK 4 STORE.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 STORE\WEEK 4 STORE\bin\Debug\WEEK 4 STORE.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 STORE\WEEK 4 STORE\bin\Debug\WEEK 4 STORE.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 STORE\WEEK 4 STORE\obj\Debug\WEEK 4 STORE.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 4 STORE\WEEK 4 STORE\obj\Debug\WEEK 4 STORE.pdb

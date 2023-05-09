@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\WEEK 4 Ocean Navigation\WEEK 4 Ocean Navigation\bin\Debug\WEEK 4 Ocean Navigation.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\WEEK 4 Ocean Navigation\WEEK 4 Ocean Navigation\bin\Debug\WEEK 4 Ocean Navigation.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\WEEK 4 Ocean Navigation\WEEK 4 Ocean Navigation\bin\Debug\WEEK 4 Ocean Navigation.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\WEEK 4 Ocean Navigation\WEEK 4 Ocean Navigation\obj\Debug\WEEK 4 Ocean Navigation.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\WEEK 4 Ocean Navigation\WEEK 4 Ocean Navigation\obj\Debug\WEEK 4 Ocean Navigation.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\WEEK 4 Ocean Navigation\WEEK 4 Ocean Navigation\obj\Debug\WEEK 4 Ocean Navigation.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\WEEK 4 Ocean Navigation\WEEK 4 Ocean Navigation\obj\Debug\WEEK 4 Ocean Navigation.pdb

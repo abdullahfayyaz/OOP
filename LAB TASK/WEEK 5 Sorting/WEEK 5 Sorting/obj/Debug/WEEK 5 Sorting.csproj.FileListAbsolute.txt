@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Sorting\WEEK 5 Sorting\bin\Debug\WEEK 5 Sorting.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Sorting\WEEK 5 Sorting\bin\Debug\WEEK 5 Sorting.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Sorting\WEEK 5 Sorting\bin\Debug\WEEK 5 Sorting.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Sorting\WEEK 5 Sorting\obj\Debug\WEEK 5 Sorting.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Sorting\WEEK 5 Sorting\obj\Debug\WEEK 5 Sorting.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Sorting\WEEK 5 Sorting\obj\Debug\WEEK 5 Sorting.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Sorting\WEEK 5 Sorting\obj\Debug\WEEK 5 Sorting.pdb

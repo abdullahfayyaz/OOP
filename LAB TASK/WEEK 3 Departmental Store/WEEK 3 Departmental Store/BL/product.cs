@@ -49,13 +49,12 @@ namespace WEEK_3_Departmental_Store.BL
             }
             if (s.category == "fruits")
             {
-                tax = (s.price * 5) / 100;
+                tax = s.price * 5 / 100;
             }
             else
             {
                 tax = s.price * 15 / 100;
             }
-
             return tax;
         }
         public string order(Product s)

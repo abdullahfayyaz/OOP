@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 UAMS\WEEK 5 UAMS\obj\Debug\WEEK 5 UAMS.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 UAMS\WEEK 5 UAMS\obj\Debug\WEEK 5 UAMS.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 UAMS\WEEK 5 UAMS\bin\Debug\WEEK 5 UAMS.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 UAMS\WEEK 5 UAMS\bin\Debug\WEEK 5 UAMS.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 UAMS\WEEK 5 UAMS\bin\Debug\WEEK 5 UAMS.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 UAMS\WEEK 5 UAMS\obj\Debug\WEEK 5 UAMS.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 UAMS\WEEK 5 UAMS\obj\Debug\WEEK 5 UAMS.pdb

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7FD7CC30-3C19-477F-84A1-9E46516DE731}</ProjectGuid>
+    <ProjectGuid>{0B201712-262C-48D8-A98C-0D669E212FF8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>WEEK_5_UAMS</RootNamespace>
-    <AssemblyName>WEEK 5 UAMS</AssemblyName>
+    <RootNamespace>UAMS</RootNamespace>
+    <AssemblyName>UAMS</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,19 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\DegreeProgram.cs" />
-    <Compile Include="BL\Student.cs" />
-    <Compile Include="BL\Subject.cs" />
-    <Compile Include="DL\DegreeProgramList.cs" />
-    <Compile Include="DL\StudentList.cs" />
-    <Compile Include="DL\SubjectList.cs" />
+    <Compile Include="Degree.cs" />
+    <Compile Include="Layout.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\MUserCRUD.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="Subject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

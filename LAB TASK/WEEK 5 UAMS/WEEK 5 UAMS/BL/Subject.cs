@@ -9,19 +9,19 @@ namespace WEEK_5_UAMS.BL
     class Subject
     {
         public string code;
-        public string type;
         public int creditHours;
-        public int subjectFees;
+        public string subjectType;
+        public int subjectFee;
         public Subject()
         {
 
         }
-        public Subject(string code, string type, int creditHours, int subjectFees)
+        public Subject(string code, string subjectType, int creditHours, int subjectFee)
         {
             this.code = code;
-            this.type = type;
+            this.subjectType = subjectType;
             this.creditHours = creditHours;
-            this.subjectFees = subjectFees;
+            this.subjectFee = subjectFee;
         }
     }
 }

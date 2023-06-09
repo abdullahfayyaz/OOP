@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 7 Inheritance\WEEK 7 Inheritance\bin\Debug\WEEK 7 Inheritance.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 7 Inheritance\WEEK 7 Inheritance\bin\Debug\WEEK 7 Inheritance.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 7 Inheritance\WEEK 7 Inheritance\bin\Debug\WEEK 7 Inheritance.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 7 Inheritance\WEEK 7 Inheritance\obj\Debug\WEEK 7 Inheritance.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 7 Inheritance\WEEK 7 Inheritance\obj\Debug\WEEK 7 Inheritance.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 7 Inheritance\WEEK 7 Inheritance\obj\Debug\WEEK 7 Inheritance.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 7 Inheritance\WEEK 7 Inheritance\obj\Debug\WEEK 7 Inheritance.pdb

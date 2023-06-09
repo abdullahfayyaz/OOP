@@ -8,24 +8,20 @@ namespace WEEK_5_UAMS.BL
 {
     class DegreeProgram
     {
-        public List<Subject> Subjects;
-        public string name;
-        public int duration;
+        public string degreeName;
+        public float degreeDuration;
+        public List<Subject> subjects;
         public int seats;
-        public DegreeProgram()
+        public DegreeProgram(string degreeName, float degreeDuration, int seats)
         {
-
-        }
-        public DegreeProgram(string name, int duration, int seats)
-        {
-            this.name = name;
-            this.duration = duration;
+            this.degreeName = degreeName;
+            this.degreeDuration = degreeDuration;
             this.seats = seats;
-            Subjects = new List<Subject>();
+            subjects = new List<Subject>();
         }
         public bool isSubjectExists(Subject sub)
         {
-            foreach (Subject s in Subjects)
+            foreach (Subject s in subjects)
             {
                 if (s.code == sub.code)
                 {
@@ -34,22 +30,12 @@ namespace WEEK_5_UAMS.BL
             }
             return false;
         }
-        public int calculateCreditHour()
+        public bool AddSubject(Subject s)
         {
-            int count = 0;
-            for (int x = 0; x < Subjects.Count; x++)
+            int creditHours = calculateCreditHours();
+            if (creditHours + s.creditHours <= 20)
             {
-                count = count + Subjects[x].creditHours;
-            }
-            return count;
-        }
-        public bool addSubject(Subject s)
-        {
-            int checkCR = calculateCreditHour();
-
-            if (checkCR + s.creditHours <= 20)
-            {
-                Subjects.Add(s);
+                subjects.Add(s);
                 return true;
             }
             else
@@ -57,6 +43,14 @@ namespace WEEK_5_UAMS.BL
                 return false;
             }
         }
-
+        public int calculateCreditHours()
+        {
+            int count = 0;
+            for (int x = 0; x < subjects.Count; x++)
+            {
+                count = count + subjects[x].creditHours;
+            }
+            return count;
+        }
     }
 }

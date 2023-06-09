@@ -15,7 +15,7 @@ namespace HMS_V5.DL
             int reviewCount = reviewList.Count();
             if (reviewCount == 0)
             {
-                Console.WriteLine("No Reviews");
+                
             }
             else
             {

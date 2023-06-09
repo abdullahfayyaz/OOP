@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V6\HMS V6\bin\Debug\HMS V6.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V6\HMS V6\bin\Debug\HMS V6.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V6\HMS V6\bin\Debug\HMS V6.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V6\HMS V6\obj\Debug\HMS V6.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V6\HMS V6\obj\Debug\HMS V6.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V6\HMS V6\obj\Debug\HMS V6.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS V6\HMS V6\obj\Debug\HMS V6.pdb

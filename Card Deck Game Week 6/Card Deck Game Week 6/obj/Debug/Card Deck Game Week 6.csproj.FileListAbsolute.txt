@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Card Deck Game Week 6\Card Deck Game Week 6\bin\Debug\Card Deck Game Week 6.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Card Deck Game Week 6\Card Deck Game Week 6\bin\Debug\Card Deck Game Week 6.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Card Deck Game Week 6\Card Deck Game Week 6\bin\Debug\Card Deck Game Week 6.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Card Deck Game Week 6\Card Deck Game Week 6\obj\Debug\Card Deck Game Week 6.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Card Deck Game Week 6\Card Deck Game Week 6\obj\Debug\Card Deck Game Week 6.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Card Deck Game Week 6\Card Deck Game Week 6\obj\Debug\Card Deck Game Week 6.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Card Deck Game Week 6\Card Deck Game Week 6\obj\Debug\Card Deck Game Week 6.pdb

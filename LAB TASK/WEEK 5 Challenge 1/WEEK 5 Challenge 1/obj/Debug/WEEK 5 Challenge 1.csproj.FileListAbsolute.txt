@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Challenge 1\WEEK 5 Challenge 1\bin\Debug\WEEK 5 Challenge 1.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Challenge 1\WEEK 5 Challenge 1\bin\Debug\WEEK 5 Challenge 1.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Challenge 1\WEEK 5 Challenge 1\bin\Debug\WEEK 5 Challenge 1.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Challenge 1\WEEK 5 Challenge 1\obj\Debug\WEEK 5 Challenge 1.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Challenge 1\WEEK 5 Challenge 1\obj\Debug\WEEK 5 Challenge 1.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Challenge 1\WEEK 5 Challenge 1\obj\Debug\WEEK 5 Challenge 1.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\LAB TASK\WEEK 5 Challenge 1\WEEK 5 Challenge 1\obj\Debug\WEEK 5 Challenge 1.pdb

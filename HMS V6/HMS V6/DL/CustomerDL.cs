@@ -158,9 +158,9 @@ namespace HMS_V6.DL
         }
 
         // Checkout
-        public static int checkoutBill(int index)
+        public static void checkoutBill(int index)
         {
-            int bill = 0;
+            float bill = 0F;
             Customer c = new Customer();
             Room r = new Room();
             c = customerList[index];
@@ -168,28 +168,33 @@ namespace HMS_V6.DL
             if (c.getRoomType() == "single" || c.getRoomType() == "Single")
             {
                 bill = r.getTypeSingle() * stay_days;
+                c.setBill(bill);
             }
             else if (c.getRoomType() == "double" || c.getRoomType() == "Double")
             {
                 bill = r.getTypeDouble() * stay_days;
+                c.setBill(bill);
             }
             else if (c.getRoomType() == "triple" || c.getRoomType() == "Triple")
             {
                 bill = r.getTypeTriple() * stay_days;
+                c.setBill(bill);
             }
             else if (c.getRoomType() == "twin" || c.getRoomType() == "Twin")
             {
                 bill = r.getTypeTwin() * stay_days;
+                c.setBill(bill);
             }
             else if (c.getRoomType() == "executive" || c.getRoomType() == "Executive")
             {
                 bill = r.getTypeExecutive() * stay_days;
+                c.setBill(bill);
             }
             else if (c.getRoomType() == "king" || c.getRoomType() == "King")
             {
                 bill = r.getTypeKing() * stay_days;
+                c.setBill(bill);
             }
-            return bill;
         }
         public static void CheckOutFromList(Customer info)
         {

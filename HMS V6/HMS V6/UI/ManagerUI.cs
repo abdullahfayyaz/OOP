@@ -89,7 +89,7 @@ namespace HMS_V6.UI
                                                     if (valid_date == true)
                                                     {
                                                         int roomNumber = roomCount;
-                                                        Customer info = new Customer(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn);
+                                                        Customer info = new Customer(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn, 0);
                                                         CustomerDL.addCustomerIntoList(info);
                                                         CustomerDL.saveCustomerData(customersPath);
                                                         roomCount++;
@@ -275,7 +275,7 @@ namespace HMS_V6.UI
                         bool id_valid = Validation.id_check(customerId);
                         if (id_valid == true)
                         {
-                            Customer info = new Customer(customerName, customerId, 0);
+                            Customer info = new Customer(customerName, customerId);
                             int isFound = CustomerDL.foundCustomer(info);
                             if (isFound == -1)
                             {
@@ -285,7 +285,7 @@ namespace HMS_V6.UI
                             {
                                 Interface.printHeader();
                                 Interface.subMenu("Checkout");
-                                info.setBill(CustomerDL.checkoutBill(isFound));
+                                CustomerDL.checkoutBill(isFound);
                                 CustomerDL.CheckOutFromList(info);
                                 CustomerDL.removeCustomer(isFound);
                                 CustomerDL.saveCustomerData(customersPath);

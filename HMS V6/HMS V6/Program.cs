@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HMS_V6.BL;
 using HMS_V6.DL;
 using HMS_V6.UI;
 

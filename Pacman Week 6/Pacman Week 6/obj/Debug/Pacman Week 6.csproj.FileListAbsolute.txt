@@ -1,0 +1,10 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\bin\Debug\Pacman Week 6.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\bin\Debug\Pacman Week 6.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\bin\Debug\Pacman Week 6.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\bin\Debug\EZInput.dll
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\bin\Debug\EZInput.xml
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\obj\Debug\Pacman Week 6.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\obj\Debug\Pacman Week 6.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\obj\Debug\Pacman Week 6.csproj.CopyComplete
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\obj\Debug\Pacman Week 6.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\Pacman Week 6\Pacman Week 6\obj\Debug\Pacman Week 6.pdb

@@ -8,6 +8,7 @@ namespace HMS_V6.BL
 {
     class Customer : Role
     {
+        private float bill = 0F;
         public Customer()
         {
 
@@ -16,13 +17,21 @@ namespace HMS_V6.BL
         {
 
         }
-        public Customer(string name, string id, int bill) : base(name, id)
+        public Customer(string name, string id, string contact, string city, string totalPerson, string roomType, int roomNumber, string no_of_stay, string checkIn) : base(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn)
+        {
+          
+        }
+        public Customer(string name, string id, string contact, string city, string totalPerson, string roomType, int roomNumber, string no_of_stay, string checkIn, float bill) : base(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn)
         {
             this.bill = bill;
         }
-        public Customer(string name, string id, string contact, string city, string totalPerson, string roomType, int roomNumber, string no_of_stay, string checkIn) : base(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn)
+        public void setBill(float bill)
         {
-
+            this.bill = bill;
+        }
+        public float getBill()
+        {
+            return bill;
         }
     }
 }

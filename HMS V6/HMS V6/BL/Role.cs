@@ -17,7 +17,6 @@ namespace HMS_V6.BL
         protected int roomNumber;
         protected string no_of_stay;
         protected string checkIn;
-        protected int bill;
         public Role()
         {
 
@@ -110,14 +109,6 @@ namespace HMS_V6.BL
         public string getCheckIn()
         {
             return checkIn;
-        }
-        public void setBill(int bill)
-        {
-            this.bill = bill;
-        }
-        public int getBill()
-        {
-            return bill;
         }
     }
 }

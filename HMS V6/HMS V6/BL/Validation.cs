@@ -463,7 +463,7 @@ namespace HMS_V6.BL
                     }
                     else if (date[3] == '1')
                     {
-                        if (date[x] > 48 && date[x] < 51)
+                        if (date[x] > 47 && date[x] < 51)
                         {
                             x++;
                         }

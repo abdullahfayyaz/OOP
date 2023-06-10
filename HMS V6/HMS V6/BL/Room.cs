@@ -8,37 +8,37 @@ namespace HMS_V6.BL
 {
     class Room
     {
-        private int type_single = 3000;
-        private int type_double = 5000;
-        private int type_triple = 8000;
-        private int type_twin = 6000;
-        private int type_executive = 15000;
-        private int type_king = 10000;
+        private float type_single = 3000;
+        private float type_double = 5000;
+        private float type_triple = 8000;
+        private float type_twin = 6000;
+        private float type_executive = 15000;
+        private float type_king = 10000;
         public Room()
         {
 
         }
-        public int getTypeSingle()
+        public float getTypeSingle()
         {
             return type_single;
         }
-        public int getTypeDouble()
+        public float getTypeDouble()
         {
             return type_double;
         }
-        public int getTypeTriple()
+        public float getTypeTriple()
         {
             return type_triple;
         }
-        public int getTypeTwin()
+        public float getTypeTwin()
         {
             return type_twin;
         }
-        public int getTypeExecutive()
+        public float getTypeExecutive()
         {
             return type_executive;
         }
-        public int getTypeKing()
+        public float getTypeKing()
         {
             return type_king;
         }

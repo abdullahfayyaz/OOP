@@ -12,6 +12,8 @@ namespace HMS_V6.DL
     class CustomerDL
     {
         static private List<Customer> customerList = new List<Customer>();
+        static private List<String> reviewList = new List<String>();
+        static private List<String> ratingList = new List<String>();
 
         // Add Customer
         public static bool checkCustomer(string id)
@@ -46,8 +48,9 @@ namespace HMS_V6.DL
         }
 
         // Store Customer Data in File
-        public static void saveCustomerData(string customersPath)
+        public static void saveCustomerData()
         {
+            string customersPath = "Customers.txt";
             StreamWriter file = new StreamWriter(customersPath, false);
             for (int i = 0; i < customerList.Count(); i++)
             {
@@ -62,7 +65,7 @@ namespace HMS_V6.DL
         // Reading Customer File for Storing Data in Arrays
         public static void loadCustomerData(ref int roomCount)
         {
-            string customersPath = "C:\\Users\\HP\\Documents\\STUDY\\2nd Semester\\OOP TASK\\HMS V6\\Customers.txt";
+            string customersPath = "Customers.txt";
             if (File.Exists(customersPath))
             {
                 StreamReader file = new StreamReader(customersPath);
@@ -137,14 +140,16 @@ namespace HMS_V6.DL
         }
 
         // View Booked Rooms
-        public static void bookedRooms()
+        public static void viewBookedRooms()
         {
-            Console.WriteLine("Customer Name" + "\t" + "Room Number" + "\t" + "No. of Person" + "\t" + "No. of Stay" + "\t" + "Contact" + "\t\t" + "CheckIn Date" + "\t" + "Room Type");
-            for (int i = 0; i < customerList.Count(); i++)
+            int customerCount = customerList.Count();
+            if (customerCount == 0)
             {
-                Customer c = new Customer();
-                c = customerList[i];
-                Console.WriteLine(c.getName() + "\t\t" + c.getRoomNumber() + "\t\t" + c.getTotalPerson() + "\t\t" + c.getNoOfStay() + "\t\t" + c.getContact() + "\t" + c.getCheckIn() + "\t" + c.getRoomType());
+                ManagerUI.NoCustomerAdded();
+            }
+            else
+            {
+                ManagerUI.bookedRooms(customerList);
             }
         }
 
@@ -205,6 +210,128 @@ namespace HMS_V6.DL
                     ManagerUI.checkout(check);
                     break;
                 }
+            }
+        }
+
+        // Reviews
+        public static void viewReviews()
+        {
+            int reviewCount = reviewList.Count();
+            if (reviewCount == 0)
+            {
+                CustomerUI.NoReviews();
+            }
+            else
+            {
+                for (int x = 0; x < reviewList.Count(); x++)
+                {
+                    CustomerUI.displayReviewList(reviewList[x]);
+                }
+            }
+        }
+        public static void addReviewIntoList(string review)
+        {
+            reviewList.Add(review);
+        }
+        public static void customerReview()
+        {
+            addReviewIntoList(CustomerUI.addReview());
+            saveReviewsInFile();
+        }
+
+        // Store Reviews in File
+        public static void saveReviewsInFile()
+        {
+            string reviewsPath = "Reviews.txt";
+            StreamWriter file = new StreamWriter(reviewsPath, false);
+            foreach (string review in reviewList)
+            {
+                file.WriteLine(review);
+            }
+            file.Flush();
+            file.Close();
+        }
+
+        // Reading Review File for Storing Data in Arrays
+        public static void loadReviews()
+        {
+            string reviewsPath = "Reviews.txt";
+            if (File.Exists(reviewsPath))
+            {
+                StreamReader fileVariable = new StreamReader(reviewsPath);
+                string record;
+                while ((record = fileVariable.ReadLine()) != null)
+                {
+                    string[] splittedRecord = record.Split(',');
+                    string review = splittedRecord[0];
+                    addReviewIntoList(review);
+                }
+                fileVariable.Close();
+            }
+            else
+            {
+                Interface.FileNotExists();
+            }
+        }
+
+        // Ratings
+        public static void viewRatings()
+        {
+            int ratingCount = ratingList.Count();
+            if (ratingCount == 0)
+            {
+                CustomerUI.NoRatings();
+            }
+            else
+            {
+                for (int x = 0; x < ratingList.Count(); x++)
+                {
+                    CustomerUI.displayRatingList(ratingList[x]);
+                }
+            }
+        }
+        public static void addRatingIntoList(string rating)
+        {
+            ratingList.Add(rating);
+        }
+        public static void customerRating()
+        {
+            CustomerUI.ratingMenu();
+            addRatingIntoList(Customer.addRating());
+            saveRatingsInFile();
+        }
+        // Store Ratings in File
+        public static void saveRatingsInFile()
+        {
+            string ratingsPath = "Ratings.txt";
+            StreamWriter file = new StreamWriter(ratingsPath, false);
+            foreach (string rating in ratingList)
+            {
+                file.WriteLine(rating);
+            }
+            file.Flush();
+            file.Close();
+        }
+
+        // Reading Review File for Storing Data in Arrays
+        public static void loadRatings()
+        {
+            string ratingsPath = "Ratings.txt";
+            if (File.Exists(ratingsPath))
+            {
+                StreamReader fileVariable = new StreamReader(ratingsPath);
+                string record;
+                while ((record = fileVariable.ReadLine()) != null)
+                {
+                    string[] splittedRecord = record.Split(',');
+                    string rating = splittedRecord[0];
+                    addRatingIntoList(rating);
+                }
+                fileVariable.Close();
+            }
+            else
+            {
+                Interface.FileNotExists();
             }
         }
     }

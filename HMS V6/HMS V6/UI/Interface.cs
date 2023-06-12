@@ -52,5 +52,17 @@ namespace HMS_V6.UI
         {
             Console.WriteLine("File Not Exists");
         }
+        public static void NotValidName()
+        {
+            Console.WriteLine("Enter a Valid Name");
+        }
+        public static void InvalidCNICFormat()
+        {
+            Console.WriteLine("Please Enter Valid Format (#####-#######-#)");
+        }
+        public static void NotValidContact()
+        {
+            Console.WriteLine("Enter a Valid Number");
+        }
     }
 }

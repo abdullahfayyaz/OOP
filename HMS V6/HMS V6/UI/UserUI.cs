@@ -11,7 +11,6 @@ namespace HMS_V6.UI
 {
     class UserUI
     {
-        private static string usersPath = "C:\\Users\\HP\\Documents\\STUDY\\2nd Semester\\OOP TASK\\HMS V6\\Users.txt";
         public static void loginSignup()
         {
             Console.WriteLine("Login and Sign-Up Menu >");
@@ -33,6 +32,14 @@ namespace HMS_V6.UI
         {
             Console.WriteLine("Username must be 7 characters long (Only use Alphabets and Underscore)");
         }
+        public static void invalidUser()
+        {
+            Console.WriteLine("Invalid");
+        }
+        public static void PasswordExists()
+        {
+            Console.WriteLine("Password Already Exists");
+        }
         public static void signUp()
         {
         here:
@@ -48,17 +55,18 @@ namespace HMS_V6.UI
                 bool valid = Validation.password_check(password);
                 if (valid == true)
                 {
+                    bool passwordCheck = UserDL.isPassowrdSame(password);
                     bool signUpCheck = UserDL.isValidUsername(userName);
-                    if (signUpCheck == true)
+                    if (signUpCheck == true && passwordCheck == false)
                     {
                         User info = new User(userName, password);
                         UserDL.addIntoUserList(info);
-                        UserDL.saveUserData(usersPath);
+                        UserDL.saveUserData();
                         Console.WriteLine("Sign Up Successfully");
                     }
-                    else if (signUpCheck == false)
+                    else if (signUpCheck == false || passwordCheck == true)
                     {
-                        Console.WriteLine("Username Already Exist");
+                        Console.WriteLine("Already Exist");
                         Interface.clear();
                         goto here;
                     }

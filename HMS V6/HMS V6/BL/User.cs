@@ -8,9 +8,9 @@ namespace HMS_V6.BL
 {
     class User
     {
-        protected string userName;
-        protected string password;
-        protected string role;
+        private string userName;
+        private string password;
+        private string role;
         public User()
         {
 

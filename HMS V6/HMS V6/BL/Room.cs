@@ -8,12 +8,13 @@ namespace HMS_V6.BL
 {
     class Room
     {
-        private float type_single = 3000;
-        private float type_double = 5000;
-        private float type_triple = 8000;
-        private float type_twin = 6000;
-        private float type_executive = 15000;
-        private float type_king = 10000;
+        private const float type_single = 3000;
+        private const float type_double = 5000;
+        private const float type_triple = 8000;
+        private const float type_twin = 6000;
+        private const float type_executive = 15000;
+        private const float type_king = 10000;
+        private const int totalRoom = 200;
         public Room()
         {
 
@@ -41,6 +42,10 @@ namespace HMS_V6.BL
         public float getTypeKing()
         {
             return type_king;
+        }
+        public int getTotalRoom()
+        {
+            return totalRoom;
         }
     }
 }

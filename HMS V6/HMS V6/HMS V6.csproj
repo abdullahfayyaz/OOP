@@ -44,24 +44,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\Customer.cs" />
-    <Compile Include="BL\Manager.cs" />
-    <Compile Include="BL\Rating.cs" />
-    <Compile Include="BL\Review.cs" />
-    <Compile Include="BL\Role.cs" />
+    <Compile Include="BL\Person.cs" />
     <Compile Include="BL\Room.cs" />
+    <Compile Include="BL\StaffMember.cs" />
     <Compile Include="BL\User.cs" />
     <Compile Include="BL\Validation.cs" />
     <Compile Include="DL\CustomerDL.cs" />
-    <Compile Include="DL\RatingDL.cs" />
-    <Compile Include="DL\ReviewDL.cs" />
+    <Compile Include="DL\StaffMemberDL.cs" />
     <Compile Include="DL\UserDL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CustomerUI.cs" />
     <Compile Include="UI\Interface.cs" />
     <Compile Include="UI\ManagerUI.cs" />
-    <Compile Include="UI\RatingUI.cs" />
-    <Compile Include="UI\ReviewUI.cs" />
     <Compile Include="UI\RoomUI.cs" />
+    <Compile Include="UI\StaffMemberUI.cs" />
     <Compile Include="UI\UserUI.cs" />
   </ItemGroup>
   <ItemGroup>

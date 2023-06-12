@@ -31,8 +31,9 @@ namespace HMS_V6.DL
         }
 
         // Store User Data in File
-        public static void saveUserData(string usersPath)
+        public static void saveUserData()
         {
+            string usersPath = "Users.txt";
             StreamWriter file = new StreamWriter(usersPath, false);
             for (int i = 0; i < userList.Count(); i++)
             {
@@ -53,7 +54,7 @@ namespace HMS_V6.DL
         // Reading User File for Storing Data in Arrays
         public static void loadUserData()
         {
-            string usersPath = "C:\\Users\\HP\\Documents\\STUDY\\2nd Semester\\OOP TASK\\HMS V6\\Users.txt";
+            string usersPath = "Users.txt";
             if (File.Exists(usersPath))
             {
                 StreamReader fileVariable = new StreamReader(usersPath);
@@ -87,6 +88,39 @@ namespace HMS_V6.DL
                 }
             }
             return role;
+        }
+        // Password
+        public static bool isPassowrdSame(string passowrd)
+        {
+            bool flag = false;
+            foreach (User check in userList)
+            {
+                if (check.getPassword() == passowrd)
+                {
+                    flag = true;
+                    break;
+                }
+            }
+            return flag;
+        }
+        public static int foundUser(string password)
+        {
+            int indexFound = -1;
+            for (int i = 0; i < userList.Count(); i++)
+            {
+                if (password == userList[i].getPassword() && userList[i].getRole() == "customer")
+                {
+                    indexFound = i;
+                    break;
+                }
+            }
+            return indexFound;
+        }
+        public static void changePassword(string password, int index)
+        {
+            User info = new User();
+            info = userList[index];
+            info.setPassword(password);
         }
     }
 }

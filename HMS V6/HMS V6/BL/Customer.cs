@@ -34,6 +34,14 @@ namespace HMS_V6.BL
             this.bill = 0;
         }
 
+        internal Room Room
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public override void setTotalPerson(string totalPerson)
         {
             this.totalPerson = totalPerson;

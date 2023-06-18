@@ -13,9 +13,8 @@ namespace HMS_V6
     {
         static void Main(string[] args)
         {
-            string option = "";
-            string role = "";
-            bool exit_app = false;
+            string option;
+            string role;
             UserDL.loadUserData();
             PersonDL.loadData();
             PersonDL.loadRatings();
@@ -30,15 +29,15 @@ namespace HMS_V6
                     role = UserUI.login();
                     if (role == "manager")
                     {
-                        ManagerUI.managerInterface(ref exit_app);
-                        if (exit_app == true)
+                        ManagerUI.managerInterface();
+                        if (Extra.exit_app == true)
                         {
                             break;
                         }
                     }
                     else if (role == "customer")
                     {
-                        CustomerUI.customerInterface(ref exit_app);
+                        CustomerUI.customerInterface();
                     }
                     else
                     {

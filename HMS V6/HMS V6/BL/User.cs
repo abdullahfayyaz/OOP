@@ -26,6 +26,15 @@ namespace HMS_V6.BL
             this.password = password;
             this.role = role;
         }
+
+        internal Customer Customer
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void setUserName(string userName)
         {
             this.userName = userName;

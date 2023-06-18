@@ -21,14 +21,6 @@ namespace HMS_V6.BL
 
         }
 
-        internal Customer Customer
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public float getTypeSingle()
         {
             return type_single;

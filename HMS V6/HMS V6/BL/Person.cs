@@ -28,14 +28,6 @@ namespace HMS_V6.BL
             this.city = city;
         }
 
-        internal User User
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public void setName(string name)
         {
             this.name = name;

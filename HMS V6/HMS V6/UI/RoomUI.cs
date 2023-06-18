@@ -12,26 +12,46 @@ namespace HMS_V6.UI
         public static void roomType()
         {
             Room r = new Room();
-            Console.WriteLine("\t" + "Room Categories & their Facilities");
-            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\t\t\t" + "Room Categories & their Facilities");
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("1- Single: A room assigned to one person that consist of single bed.");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("\t" + "* Price Per Night: " + r.getTypeSingle());
-            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("2- Double: A room assigned to two people. May have one or more beds.");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("\t" + "* Price Per Night: " + r.getTypeDouble());
-            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("3- Triple: A room that can accommodate three persons and has been fitted with three twin beds.");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("\t" + "* Price Per Night: " + r.getTypeTriple());
-            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("4- Twin: A room with two twin beds. May be occupied by one or more people.");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("\t" + "* Price Per Night: " + r.getTypeTwin());
-            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("5- Executive: A parlour or living room connected with to one or more bedrooms.");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("\t" + "* Price Per Night: " + r.getTypeExecutive());
-            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("6- King: A room with a king-sized bed. May be occupied by one or more people.");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("\t" + "* Price Per Night: " + r.getTypeKing());
-            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         }
 
         // Room Suggestion
@@ -39,39 +59,59 @@ namespace HMS_V6.UI
         {
             if (totalPerson == "1")
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Recommended Room Type");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("> Single");
                 Console.WriteLine("> Twin");
                 Console.WriteLine("> King");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.White;
             }
             else if (totalPerson == "2")
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Recommended Room Type");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("> Double");
                 Console.WriteLine("> Twin");
                 Console.WriteLine("> King");
                 Console.WriteLine("> Executive");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.White;
             }
             else if (totalPerson == "3")
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Recommended Room Type");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("> Triple");
                 Console.WriteLine("> King");
                 Console.WriteLine("> Executive");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.White;
             }
             else if (totalPerson == "4" || totalPerson == "5")
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Recommended Room Type");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.WriteLine("> King");
                 Console.WriteLine("> Executive");
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("---------------------");
+                Console.ForegroundColor = ConsoleColor.White;
             }
         }
     }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BL\Customer.cs" />
+    <Compile Include="BL\Extra.cs" />
     <Compile Include="BL\Person.cs" />
     <Compile Include="BL\Room.cs" />
     <Compile Include="BL\StaffMember.cs" />

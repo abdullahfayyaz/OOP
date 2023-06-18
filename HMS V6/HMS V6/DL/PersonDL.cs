@@ -15,8 +15,8 @@ namespace HMS_V6.DL
         private static List<String> reviewList = new List<String>();
         private static List<String> ratingList = new List<String>();
 
-        // Add Customer
-        public static void addCustomerIntoList(Customer info)
+        // Add Customer and Staff Member Into List
+        public static void addPersonIntoList(Person info)
         {
             personList.Add(info);
         }
@@ -64,13 +64,11 @@ namespace HMS_V6.DL
             {
                 if (personList[i].getRole() == "Customer")
                 {
-                    Person info = personList[i];
-                    file.WriteLine(personList[i].getRole() + "," + info.getName() + "," + info.getID() + "," + info.getContact() + "," + info.getCity() + "," + info.getTotalPerson() + "," + info.getRoomType() + "," + info.getNoOfStay() + "," + info.getCheckIn() + "," + info.getRoomNumber() + "," + info.getBill());
+                    file.WriteLine(personList[i].getRole() + "," + personList[i].getName() + "," + personList[i].getID() + "," + personList[i].getContact() + "," + personList[i].getCity() + "," + personList[i].getTotalPerson() + "," + personList[i].getRoomType() + "," + personList[i].getNoOfStay() + "," + personList[i].getCheckIn() + "," + personList[i].getRoomNumber() + "," + personList[i].getBill());
                 }
                 else if (personList[i].getRole() == "Staff")
                 {
-                    Person info = personList[i];
-                    file.WriteLine(personList[i].getRole() + "," + info.getName() + "," + info.getID() + "," + info.getContact() + "," + info.getCity() + "," + info.getDuty());
+                    file.WriteLine(personList[i].getRole() + "," + personList[i].getName() + "," + personList[i].getID() + "," + personList[i].getContact() + "," + personList[i].getCity() + "," + personList[i].getDuty());
                 }
             }
             file.Flush();
@@ -100,7 +98,7 @@ namespace HMS_V6.DL
                         string checkIn = splittedRecord[8];
                         int roomNumber = int.Parse(splittedRecord[9]);
                         Customer info = new Customer(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn);
-                        addCustomerIntoList(info);
+                        addPersonIntoList(info);
                         Room.roomCount++;
                     }
                     else if (splittedRecord[0] == "Staff")
@@ -111,7 +109,7 @@ namespace HMS_V6.DL
                         string city = splittedRecord[4];
                         string duty = splittedRecord[5];
                         StaffMember info = new StaffMember(name, id, contact, city, duty);
-                        addStaffMemberIntoList(info);
+                        addPersonIntoList(info);
                     }
                 }
                 file.Close();
@@ -125,23 +123,19 @@ namespace HMS_V6.DL
         // Update Customer
         public static void updateName(string name, int index)
         {
-            Person change = personList[index];
-            change.setName(name);
+            personList[index].setName(name);
         }
         public static void updateTotalPerson(string totalPerson, int index)
         {
-            Person change = personList[index];
-            change.setTotalPerson(totalPerson);
+            personList[index].setTotalPerson(totalPerson);
         }
         public static void updateRoomType(string roomType, int index)
         {
-            Person change = personList[index];
-            change.setRoomType(roomType);
+            personList[index].setRoomType(roomType);
         }
         public static void updateStayDay(string no_of_stay, int index)
         {
-            Person change = personList[index];
-            change.setNoOfStay(no_of_stay);
+            personList[index].setNoOfStay(no_of_stay);
         }
 
         // Search Customer
@@ -414,10 +408,6 @@ namespace HMS_V6.DL
         public static void removePerson(int index)
         {
             personList.RemoveAt(index);
-        }
-        public static void addStaffMemberIntoList(StaffMember info)
-        {
-            personList.Add(info);
         }
 
         // Count Staff Member

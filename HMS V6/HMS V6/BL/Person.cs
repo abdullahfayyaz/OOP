@@ -12,6 +12,7 @@ namespace HMS_V6.BL
         protected string id;
         protected string contact;
         protected string city;
+        protected string role;
         public Person()
         {
 
@@ -26,6 +27,15 @@ namespace HMS_V6.BL
             this.contact = contact;
             this.city = city;
         }
+
+        internal User User
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void setName(string name)
         {
             this.name = name;
@@ -57,6 +67,70 @@ namespace HMS_V6.BL
         public string getCity()
         {
             return city;
+        }
+        public void setRole(string role)
+        {
+            this.role = role;
+        }
+        public string getRole()
+        {
+            return role;
+        }
+        public virtual void setTotalPerson(string totalPerson)
+        {
+            
+        }
+        public virtual string getTotalPerson()
+        {
+            return null;
+        }
+        public virtual void setRoomType(string roomType)
+        {
+            
+        }
+        public virtual string getRoomType()
+        {
+            return null;
+        }
+        public virtual void setRoomNumber(int roomNumber)
+        {
+           
+        }
+        public virtual int getRoomNumber()
+        {
+            return 0;
+        }
+        public virtual void setNoOfStay(string no_of_stay)
+        {
+            
+        }
+        public virtual string getNoOfStay()
+        {
+            return null;
+        }
+        public virtual void setCheckIn(string checkIn)
+        {
+            
+        }
+        public virtual string getCheckIn()
+        {
+            return null;
+        }
+        public virtual void setBill(float bill)
+        {
+           
+        }
+        public virtual float getBill()
+        {
+            return 0F;
+        }
+        public virtual void setDuty(string duty)
+        {
+            
+        }
+        public virtual string getDuty()
+        {
+            return null;
         }
     }
 }

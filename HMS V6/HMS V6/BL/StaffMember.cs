@@ -8,7 +8,7 @@ namespace HMS_V6.BL
 {
     class StaffMember : Person
     {
-        private string role;
+        private string duty;
         public StaffMember()
         {
 
@@ -17,17 +17,18 @@ namespace HMS_V6.BL
         {
 
         }
-        public StaffMember(string name, string id, string contact, string city, string role) : base(name, id, contact, city)
+        public StaffMember(string name, string id, string contact, string city, string duty) : base(name, id, contact, city)
         {
-            this.role = role;
+            base.role = "Staff";
+            this.duty = duty;
         }
-        public void setRole(string role)
+        public override void setDuty(string duty)
         {
-            this.role = role;
+            this.duty = duty;
         }
-        public string getRole()
+        public override string getDuty()
         {
-            return role;
+            return duty;
         }
         public static string assignRole(string option)
         {

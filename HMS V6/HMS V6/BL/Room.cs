@@ -15,10 +15,20 @@ namespace HMS_V6.BL
         private const float type_executive = 15000;
         private const float type_king = 10000;
         private const int totalRoom = 200;
+        public static int roomCount = 1;
         public Room()
         {
 
         }
+
+        internal Customer Customer
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public float getTypeSingle()
         {
             return type_single;

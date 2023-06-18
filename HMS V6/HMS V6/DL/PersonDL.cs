@@ -9,63 +9,78 @@ using HMS_V6.UI;
 
 namespace HMS_V6.DL
 {
-    class CustomerDL
+    class PersonDL
     {
-        static private List<Customer> customerList = new List<Customer>();
-        static private List<String> reviewList = new List<String>();
-        static private List<String> ratingList = new List<String>();
+        private static List<Person> personList = new List<Person>();
+        private static List<String> reviewList = new List<String>();
+        private static List<String> ratingList = new List<String>();
 
         // Add Customer
+        public static void addCustomerIntoList(Customer info)
+        {
+            personList.Add(info);
+        }
+
+        // Check Customer
         public static bool checkCustomer(string id)
         {
             bool isNew = true;
-            foreach (Customer check in customerList)
+            for (int x = 0; x < personList.Count; x++)
             {
-                if (id == check.getID())
+                if (personList[x].getRole() == "Customer")
                 {
-                    isNew = false;
-                    break;
+                    if (id == personList[x].getID())
+                    {
+                        isNew = false;
+                        break;
+                    }
                 }
             }
             return isNew;
         }
-        public static void addCustomerIntoList(Customer info)
-        {
-            customerList.Add(info);
-        }
         public static int foundCustomer(Customer info)
         {
             int indexFound = -1;
-            for (int i = 0; i < customerList.Count(); i++)
+            for (int i = 0; i < personList.Count(); i++)
             {
-                if (info.getName() == customerList[i].getName() && info.getID() == customerList[i].getID())
+                if (personList[i].getRole() == "Customer")
                 {
-                    indexFound = i;
-                    break;
+                    if (info.getName() == personList[i].getName() && info.getID() == personList[i].getID())
+                    {
+                        indexFound = i;
+                        break;
+                    }
                 }
             }
             return indexFound;
         }
 
-        // Store Customer Data in File
-        public static void saveCustomerData()
+        // Store Data in File
+        public static void saveData()
         {
-            string customersPath = "Customers.txt";
+            string customersPath = "Person.txt";
             StreamWriter file = new StreamWriter(customersPath, false);
-            for (int i = 0; i < customerList.Count(); i++)
+            for (int i = 0; i < personList.Count(); i++)
             {
-                Customer info = new Customer();
-                info = customerList[i];
-                file.WriteLine(info.getName() + "," + info.getID() + "," + info.getContact() + "," + info.getCity() + "," + info.getTotalPerson() + "," + info.getRoomType() + "," + info.getNoOfStay() + "," + info.getCheckIn() + "," + info.getRoomNumber());
+                if (personList[i].getRole() == "Customer")
+                {
+                    Person info = personList[i];
+                    file.WriteLine(personList[i].getRole() + "," + info.getName() + "," + info.getID() + "," + info.getContact() + "," + info.getCity() + "," + info.getTotalPerson() + "," + info.getRoomType() + "," + info.getNoOfStay() + "," + info.getCheckIn() + "," + info.getRoomNumber() + "," + info.getBill());
+                }
+                else if (personList[i].getRole() == "Staff")
+                {
+                    Person info = personList[i];
+                    file.WriteLine(personList[i].getRole() + "," + info.getName() + "," + info.getID() + "," + info.getContact() + "," + info.getCity() + "," + info.getDuty());
+                }
             }
             file.Flush();
             file.Close();
         }
 
-        // Reading Customer File for Storing Data in Arrays
-        public static void loadCustomerData(ref int roomCount)
+        // Reading File for Storing Data in Arrays
+        public static void loadData()
         {
-            string customersPath = "Customers.txt";
+            string customersPath = "Person.txt";
             if (File.Exists(customersPath))
             {
                 StreamReader file = new StreamReader(customersPath);
@@ -73,18 +88,31 @@ namespace HMS_V6.DL
                 while ((record = file.ReadLine()) != null)
                 {
                     string[] splittedRecord = record.Split(',');
-                    string name = splittedRecord[0];
-                    string id = splittedRecord[1];
-                    string contact = splittedRecord[2];
-                    string city = splittedRecord[3];
-                    string totalPerson = splittedRecord[4];
-                    string roomType = splittedRecord[5];
-                    string no_of_stay = splittedRecord[6];
-                    string checkIn = splittedRecord[7];
-                    int roomNumber = int.Parse(splittedRecord[8]);
-                    Customer info = new Customer(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn);
-                    addCustomerIntoList(info);
-                    roomCount++;
+                    if (splittedRecord[0] == "Customer")
+                    {
+                        string name = splittedRecord[1];
+                        string id = splittedRecord[2];
+                        string contact = splittedRecord[3];
+                        string city = splittedRecord[4];
+                        string totalPerson = splittedRecord[5];
+                        string roomType = splittedRecord[6];
+                        string no_of_stay = splittedRecord[7];
+                        string checkIn = splittedRecord[8];
+                        int roomNumber = int.Parse(splittedRecord[9]);
+                        Customer info = new Customer(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn);
+                        addCustomerIntoList(info);
+                        Room.roomCount++;
+                    }
+                    else if (splittedRecord[0] == "Staff")
+                    {
+                        string name = splittedRecord[1];
+                        string id = splittedRecord[2];
+                        string contact = splittedRecord[3];
+                        string city = splittedRecord[4];
+                        string duty = splittedRecord[5];
+                        StaffMember info = new StaffMember(name, id, contact, city, duty);
+                        addStaffMemberIntoList(info);
+                    }
                 }
                 file.Close();
             }
@@ -97,59 +125,67 @@ namespace HMS_V6.DL
         // Update Customer
         public static void updateName(string name, int index)
         {
-            Customer change = new Customer();
-            change = customerList[index];
+            Person change = personList[index];
             change.setName(name);
         }
         public static void updateTotalPerson(string totalPerson, int index)
         {
-            Customer change = new Customer();
-            change = customerList[index];
+            Person change = personList[index];
             change.setTotalPerson(totalPerson);
         }
         public static void updateRoomType(string roomType, int index)
         {
-            Customer change = new Customer();
-            change = customerList[index];
+            Person change = personList[index];
             change.setRoomType(roomType);
         }
         public static void updateStayDay(string no_of_stay, int index)
         {
-            Customer change = new Customer();
-            change = customerList[index];
+            Person change = personList[index];
             change.setNoOfStay(no_of_stay);
         }
 
         // Search Customer
         public static void searchCustomerInList(Customer info)
         {
-            foreach (Customer check in customerList)
+            for (int x = 0; x < personList.Count; x++)
             {
-                if (check.getName() == info.getName() && check.getID() == info.getID())
+                if (personList[x].getRole() == "Customer")
                 {
-                    ManagerUI.searchCustomer(check);
-                    break;
+                    Person check = personList[x];
+                    if (check.getName() == info.getName() && check.getID() == info.getID())
+                    {
+                        ManagerUI.searchCustomer(check);
+                        break;
+                    }
                 }
             }
         }
 
-        // Remove Customer
-        public static void removeCustomer(int index)
+        // Count Customer
+        public static int countCustomer()
         {
-            customerList.RemoveAt(index);
+            int customerCount = 0;
+            for (int x = 0; x < personList.Count; x++)
+            {
+                if (personList[x].getRole() == "Customer")
+                {
+                    customerCount++;
+                }
+            }
+            return customerCount;
         }
 
         // View Booked Rooms
         public static void viewBookedRooms()
         {
-            int customerCount = customerList.Count();
+            int customerCount = countCustomer();
             if (customerCount == 0)
             {
                 ManagerUI.NoCustomerAdded();
             }
             else
             {
-                ManagerUI.bookedRooms(customerList);
+                ManagerUI.bookedRooms(personList);
             }
         }
 
@@ -157,7 +193,7 @@ namespace HMS_V6.DL
         public static int availableRooms(int totalRoom)
         {
             int freeRooms, customerCount = 0;
-            customerCount = customerList.Count();
+            customerCount = countCustomer();
             freeRooms = totalRoom - customerCount;
             return freeRooms;
         }
@@ -166,9 +202,8 @@ namespace HMS_V6.DL
         public static void checkoutBill(int index)
         {
             float bill = 0F;
-            Customer c = new Customer();
+            Person c = personList[index];
             Room r = new Room();
-            c = customerList[index];
             int stay_days = int.Parse(c.getNoOfStay());
             if (c.getRoomType() == "single" || c.getRoomType() == "Single")
             {
@@ -203,12 +238,16 @@ namespace HMS_V6.DL
         }
         public static void CheckOutFromList(Customer info)
         {
-            foreach (Customer check in customerList)
+            for (int x = 0; x < personList.Count; x++)
             {
-                if (check.getName() == info.getName() && check.getID() == info.getID())
+                if (personList[x].getRole() == "Customer")
                 {
-                    ManagerUI.checkout(check);
-                    break;
+                    Person check = personList[x];
+                    if (check.getName() == info.getName() && check.getID() == info.getID())
+                    {
+                        ManagerUI.checkout(check);
+                        break;
+                    }
                 }
             }
         }
@@ -332,6 +371,80 @@ namespace HMS_V6.DL
             else
             {
                 Interface.FileNotExists();
+            }
+        }
+
+        // Check Staff Member
+        public static bool checkStaffMember(string id)
+        {
+            bool isNew = true;
+            for (int x = 0; x < personList.Count; x++)
+            {
+                if (personList[x].getRole() == "Staff")
+                {
+                    if (id == personList[x].getID())
+                    {
+                        isNew = false;
+                        break;
+                    }
+                }
+            }
+            return isNew;
+        }
+
+        // Find Staff Member
+        public static int foundStaffMember(StaffMember info)
+        {
+            int indexFound = -1;
+            for (int i = 0; i < personList.Count(); i++)
+            {
+                if (personList[i].getRole() == "Staff")
+                {
+                    if (info.getName() == personList[i].getName() && info.getID() == personList[i].getID())
+                    {
+                        indexFound = i;
+                        break;
+                    }
+                }
+            }
+            return indexFound;
+        }
+
+        // Remove Person
+        public static void removePerson(int index)
+        {
+            personList.RemoveAt(index);
+        }
+        public static void addStaffMemberIntoList(StaffMember info)
+        {
+            personList.Add(info);
+        }
+
+        // Count Staff Member
+        public static int countSatffMember()
+        {
+            int staffCount = 0;
+            for (int x = 0; x < personList.Count; x++)
+            {
+                if (personList[x].getRole() == "Staff")
+                {
+                    staffCount++;
+                }
+            }
+            return staffCount;
+        }
+
+        // View Staff Member
+        public static void viewStaffMember()
+        {
+            int memberCount = countSatffMember();
+            if (memberCount == 0)
+            {
+                StaffMemberUI.NoStaffMember();
+            }
+            else
+            {
+                StaffMemberUI.displayStaffMember(personList);
             }
         }
     }

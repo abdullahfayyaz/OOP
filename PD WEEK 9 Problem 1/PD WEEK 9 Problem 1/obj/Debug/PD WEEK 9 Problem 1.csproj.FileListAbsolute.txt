@@ -1,0 +1,10 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\bin\Debug\PD WEEK 9 Problem 1.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\bin\Debug\PD WEEK 9 Problem 1.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\bin\Debug\PD WEEK 9 Problem 1.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\obj\Debug\PD WEEK 9 Problem 1.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\obj\Debug\PD_WEEK_9_Problem_1.Form1.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\obj\Debug\PD_WEEK_9_Problem_1.Properties.Resources.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\obj\Debug\PD WEEK 9 Problem 1.csproj.GenerateResource.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\obj\Debug\PD WEEK 9 Problem 1.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\obj\Debug\PD WEEK 9 Problem 1.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\PD WEEK 9 Problem 1\PD WEEK 9 Problem 1\obj\Debug\PD WEEK 9 Problem 1.pdb

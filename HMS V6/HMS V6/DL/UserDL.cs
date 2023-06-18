@@ -89,6 +89,7 @@ namespace HMS_V6.DL
             }
             return role;
         }
+
         // Password
         public static bool isPassowrdSame(string passowrd)
         {

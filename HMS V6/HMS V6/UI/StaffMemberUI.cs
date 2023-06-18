@@ -10,14 +10,16 @@ namespace HMS_V6.UI
 {
     class StaffMemberUI
     {
-        public static void displayStaffMember(List<StaffMember> staffList)
+        public static void displayStaffMember(List<Person> personList)
         {
-            Console.WriteLine("Name" + "\t\t" + "ID" + "\t\t\t" + "Contact" + "\t\t" + "City" + "\t\t" + "Role");
-            for (int i = 0; i < staffList.Count(); i++)
+            Console.WriteLine("Name" + "\t\t" + "ID" + "\t\t\t" + "Contact" + "\t\t" + "City" + "\t\t" + "Duty");
+            for (int i = 0; i < personList.Count(); i++)
             {
-                StaffMember staff = new StaffMember();
-                staff = staffList[i];
-                Console.WriteLine(staff.getName() + "\t\t" + staff.getID() + "\t\t" + staff.getContact() + "\t" + staff.getCity() + "\t\t" + staff.getRole());
+                if (personList[i].getRole() == "Staff")
+                {
+                    Person staff = personList[i];
+                    Console.WriteLine(staff.getName() + "\t\t" + staff.getID() + "\t\t" + staff.getContact() + "\t" + staff.getCity() + "\t\t" + staff.getDuty());
+                }
             }
         }
         public static void NoStaffMember()
@@ -41,7 +43,7 @@ namespace HMS_V6.UI
                 bool valid_id = Validation.id_check(id);
                 if (valid_id == true)
                 {
-                    bool isCheck = StaffMemberDL.checkStaffMember(id);
+                    bool isCheck = PersonDL.checkStaffMember(id);
                     if (isCheck == true)
                     {
                         Console.Write("Enter Contact: ");
@@ -66,8 +68,8 @@ namespace HMS_V6.UI
                                 else
                                 {
                                     StaffMember info = new StaffMember(name, id, contact, city, role);
-                                    StaffMemberDL.addStaffMemberIntoList(info);
-                                    StaffMemberDL.saveStaffData();
+                                    PersonDL.addStaffMemberIntoList(info);
+                                    PersonDL.saveData();
                                     Console.WriteLine("Staff Member Added");
                                 }
                             }
@@ -134,15 +136,15 @@ namespace HMS_V6.UI
                 if (id_valid == true)
                 {
                     StaffMember info = new StaffMember(name, id);
-                    int isFound = StaffMemberDL.foundStaffMember(info);
+                    int isFound = PersonDL.foundStaffMember(info);
                     if (isFound == -1)
                     {
                         Console.WriteLine("Staff Member Not Found");
                     }
                     else
                     {
-                        StaffMemberDL.removeStaffMember(isFound);
-                        StaffMemberDL.saveStaffData();
+                        PersonDL.removePerson(isFound);
+                        PersonDL.saveData();
                         Console.WriteLine("Staff Member Removed");
                     }
                 }

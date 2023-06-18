@@ -15,13 +15,11 @@ namespace HMS_V6
         {
             string option = "";
             string role = "";
-            int roomCount = 1;
             bool exit_app = false;
             UserDL.loadUserData();
-            CustomerDL.loadCustomerData(ref roomCount);
-            CustomerDL.loadRatings();
-            CustomerDL.loadReviews();
-            StaffMemberDL.loadSatffData();
+            PersonDL.loadData();
+            PersonDL.loadRatings();
+            PersonDL.loadReviews();
             do
             {
                 Interface.printHeader();
@@ -32,7 +30,7 @@ namespace HMS_V6
                     role = UserUI.login();
                     if (role == "manager")
                     {
-                        ManagerUI.managerInterface(ref roomCount, ref exit_app);
+                        ManagerUI.managerInterface(ref exit_app);
                         if (exit_app == true)
                         {
                             break;
@@ -40,7 +38,7 @@ namespace HMS_V6
                     }
                     else if (role == "customer")
                     {
-                        CustomerUI.customerInterface(ref roomCount, ref exit_app);
+                        CustomerUI.customerInterface(ref exit_app);
                     }
                     else
                     {

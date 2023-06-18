@@ -33,7 +33,7 @@ namespace HMS_V6.UI
             Console.WriteLine("15- Exit");
         }
 
-        public static void managerInterface(ref int roomCount, ref bool exit_app)
+        public static void managerInterface(ref bool exit_app)
         {
             string option_manager = "";
             while (true)
@@ -43,7 +43,7 @@ namespace HMS_V6.UI
                 option_manager = Interface.choice();
                 if (option_manager == "1")
                 {
-                    addCustomer(ref roomCount);
+                    addCustomer();
                 }
                 else if (option_manager == "2")
                 {
@@ -67,14 +67,14 @@ namespace HMS_V6.UI
                         if (id_valid == true)
                         {
                             Customer info = new Customer(customerName, customerId);
-                            int isFound = CustomerDL.foundCustomer(info);
+                            int isFound = PersonDL.foundCustomer(info);
                             if (isFound == -1)
                             {
                                 Console.WriteLine("Customer is not staying in this hotel");
                             }
                             else
                             {
-                                CustomerDL.searchCustomerInList(info);
+                                PersonDL.searchCustomerInList(info);
                             }
                         }
                         else if (id_valid == false)
@@ -103,15 +103,15 @@ namespace HMS_V6.UI
                         if (id_valid == true)
                         {
                             Customer info = new Customer(customerName, customerId);
-                            int isFound = CustomerDL.foundCustomer(info);
+                            int isFound = PersonDL.foundCustomer(info);
                             if (isFound == -1)
                             {
                                 Console.WriteLine("Customer Not Found");
                             }
                             else
                             {
-                                CustomerDL.removeCustomer(isFound);
-                                CustomerDL.saveCustomerData();
+                                PersonDL.removePerson(isFound);
+                                PersonDL.saveData();
                                 Console.WriteLine("Customer Removed");
                             }
                         }
@@ -130,7 +130,7 @@ namespace HMS_V6.UI
                 {
                     Interface.printHeader();
                     Interface.subMenu("View Booked Rooms");
-                    CustomerDL.viewBookedRooms();
+                    PersonDL.viewBookedRooms();
                     Interface.clear();
                 }
                 else if (option_manager == "6")
@@ -138,7 +138,7 @@ namespace HMS_V6.UI
                     Interface.printHeader();
                     Interface.subMenu("View Available Rooms");
                     Room info = new Room();
-                    int rooms = CustomerDL.availableRooms(info.getTotalRoom());
+                    int rooms = PersonDL.availableRooms(info.getTotalRoom());
                     Console.WriteLine("Total Rooms: " + info.getTotalRoom());
                     Console.WriteLine("No. of Available Rooms: " + rooms);
                     Interface.clear();
@@ -165,7 +165,7 @@ namespace HMS_V6.UI
                         if (id_valid == true)
                         {
                             Customer info = new Customer(customerName, customerId);
-                            int isFound = CustomerDL.foundCustomer(info);
+                            int isFound = PersonDL.foundCustomer(info);
                             if (isFound == -1)
                             {
                                 Console.WriteLine("Customer is not staying in this hotel");
@@ -174,10 +174,10 @@ namespace HMS_V6.UI
                             {
                                 Interface.printHeader();
                                 Interface.subMenu("Checkout");
-                                CustomerDL.checkoutBill(isFound);
-                                CustomerDL.CheckOutFromList(info);
-                                CustomerDL.removeCustomer(isFound);
-                                CustomerDL.saveCustomerData();
+                                PersonDL.checkoutBill(isFound);
+                                PersonDL.CheckOutFromList(info);
+                                PersonDL.removePerson(isFound);
+                                PersonDL.saveData();
                                 Console.WriteLine("Thank You!");
                             }
                         }
@@ -196,14 +196,14 @@ namespace HMS_V6.UI
                 {
                     Interface.printHeader();
                     Interface.subMenu("View Reviews");
-                    CustomerDL.viewReviews();
+                    PersonDL.viewReviews();
                     Interface.clear();
                 }
                 else if (option_manager == "10")
                 {
                     Interface.printHeader();
                     Interface.subMenu("View Ratings");
-                    CustomerDL.viewRatings();
+                    PersonDL.viewRatings();
                     Interface.clear();
                 }
                 else if (option_manager == "11")
@@ -221,7 +221,7 @@ namespace HMS_V6.UI
                 {
                     Interface.printHeader();
                     Interface.subMenu("View Staff Members");
-                    StaffMemberDL.viewStaffMember();
+                    PersonDL.viewStaffMember();
                     Interface.clear();
                 }
                 else if (option_manager == "14")
@@ -242,7 +242,7 @@ namespace HMS_V6.UI
         }
 
         // Add Customer
-        public static void addCustomer(ref int roomCount)
+        public static void addCustomer()
         {
         there:
             Interface.printHeader();
@@ -257,7 +257,7 @@ namespace HMS_V6.UI
                 bool valid_id = Validation.id_check(id);
                 if (valid_id == true)
                 {
-                    bool isCheck = CustomerDL.checkCustomer(id);
+                    bool isCheck = PersonDL.checkCustomer(id);
                     if (isCheck == true)
                     {
                         Console.Write("Enter Contact: ");
@@ -291,11 +291,11 @@ namespace HMS_V6.UI
                                             bool valid_date = Validation.date_check(checkIn);
                                             if (valid_date == true)
                                             {
-                                                int roomNumber = roomCount;
-                                                Customer info = new Customer(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn, 0);
-                                                CustomerDL.addCustomerIntoList(info);
-                                                CustomerDL.saveCustomerData();
-                                                roomCount++;
+                                                int roomNumber = Room.roomCount++;
+                                                Customer info = new Customer(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn);
+                                                PersonDL.addCustomerIntoList(info);
+                                                PersonDL.saveData();
+                                                Room.roomCount++;
                                                 Console.WriteLine("Customer Added");
                                             }
                                             else if (valid_date == false)
@@ -385,7 +385,7 @@ namespace HMS_V6.UI
                 if (id_valid == true)
                 {
                     Customer info = new Customer(customerName, customerId);
-                    int isFound = CustomerDL.foundCustomer(info);
+                    int isFound = PersonDL.foundCustomer(info);
                     if (isFound == -1)
                     {
                         Console.WriteLine("Customer Not Found");
@@ -405,7 +405,7 @@ namespace HMS_V6.UI
                                 bool valid_name = Validation.isValid(name);
                                 if (valid_name == true)
                                 {
-                                    CustomerDL.updateName(name, isFound);
+                                    PersonDL.updateName(name, isFound);
                                 }
                                 else if (valid_name == false)
                                 {
@@ -420,7 +420,7 @@ namespace HMS_V6.UI
                                 bool valid_totalPerson = Validation.check_person(totalPerson);
                                 if (valid_totalPerson == true)
                                 {
-                                    CustomerDL.updateTotalPerson(totalPerson, isFound);
+                                    PersonDL.updateTotalPerson(totalPerson, isFound);
                                 }
                                 else if (valid_totalPerson == false)
                                 {
@@ -435,7 +435,7 @@ namespace HMS_V6.UI
                                 bool valid_roomType = Validation.check_room_type(roomType);
                                 if (valid_roomType == true)
                                 {
-                                    CustomerDL.updateRoomType(roomType, isFound);
+                                    PersonDL.updateRoomType(roomType, isFound);
                                 }
                                 else if (valid_roomType == false)
                                 {
@@ -450,7 +450,7 @@ namespace HMS_V6.UI
                                 bool valid_stay = Validation.check_stay(no_of_stay);
                                 if (valid_stay == true)
                                 {
-                                    CustomerDL.updateStayDay(no_of_stay, isFound);
+                                    PersonDL.updateStayDay(no_of_stay, isFound);
                                 }
                                 else if (valid_stay == false)
                                 {
@@ -460,7 +460,7 @@ namespace HMS_V6.UI
                             }
                             else if (option_update == "5")
                             {
-                                CustomerDL.saveCustomerData();
+                                PersonDL.saveData();
                                 Console.WriteLine("Successfully Saved");
                                 break;
                             }
@@ -479,7 +479,7 @@ namespace HMS_V6.UI
         }
 
         // Search Customer
-        public static void searchCustomer(Customer info)
+        public static void searchCustomer(Person info)
         {
             Interface.printHeader();
             Interface.subMenu("Search Customer");
@@ -495,7 +495,7 @@ namespace HMS_V6.UI
         }
 
         // Checkout
-        public static void checkout(Customer info)
+        public static void checkout(Person info)
         {
             Console.WriteLine("Customer Name: " + info.getName());
             Console.WriteLine("Room Number: " + info.getRoomNumber());
@@ -510,14 +510,16 @@ namespace HMS_V6.UI
         }
 
         // View Booked Rooms
-        public static void bookedRooms(List<Customer> customerList)
+        public static void bookedRooms(List<Person> personList)
         {
             Console.WriteLine("Customer Name" + "\t" + "Room Number" + "\t" + "No. of Person" + "\t" + "No. of Stay" + "\t" + "Contact" + "\t\t" + "CheckIn Date" + "\t" + "Room Type");
-            for (int i = 0; i < customerList.Count(); i++)
+            for (int i = 0; i < personList.Count(); i++)
             {
-                Customer c = new Customer();
-                c = customerList[i];
-                Console.WriteLine(c.getName() + "\t\t" + c.getRoomNumber() + "\t\t" + c.getTotalPerson() + "\t\t" + c.getNoOfStay() + "\t\t" + c.getContact() + "\t" + c.getCheckIn() + "\t" + c.getRoomType());
+                if (personList[i].getRole() == "Customer")
+                {
+                    Person c = personList[i];
+                    Console.WriteLine(c.getName() + "\t\t" + c.getRoomNumber() + "\t\t" + c.getTotalPerson() + "\t\t" + c.getNoOfStay() + "\t\t" + c.getContact() + "\t" + c.getCheckIn() + "\t" + c.getRoomType());
+                }
             }
         }
         public static void NoCustomerAdded()

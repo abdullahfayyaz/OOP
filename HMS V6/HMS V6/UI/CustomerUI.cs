@@ -26,7 +26,7 @@ namespace HMS_V6.UI
         }
 
         // Customer Functionality
-        public static void customerInterface(ref int roomCount, ref bool exit_app)
+        public static void customerInterface(ref bool exit_app)
         {
             string option_customer = "";
             while (true)
@@ -45,7 +45,7 @@ namespace HMS_V6.UI
                 {
                     Interface.printHeader();
                     Interface.subMenu("Online Booking");
-                    ManagerUI.addCustomer(ref roomCount);
+                    ManagerUI.addCustomer();
                     Interface.clear();
                 }
                 else if (option_customer == "3")
@@ -63,15 +63,15 @@ namespace HMS_V6.UI
                         if (id_valid == true)
                         {
                             Customer info = new Customer(customerName, customerId);
-                            int isFound = CustomerDL.foundCustomer(info);
+                            int isFound = PersonDL.foundCustomer(info);
                             if (isFound == -1)
                             {
                                 Console.WriteLine("Not Booked");
                             }
                             else
                             {
-                                CustomerDL.removeCustomer(isFound);
-                                CustomerDL.saveCustomerData();
+                                PersonDL.removePerson(isFound);
+                                PersonDL.saveData();
                                 Console.WriteLine("Booking Canceled");
                             }
                         }
@@ -96,14 +96,14 @@ namespace HMS_V6.UI
                 {
                     Interface.printHeader();
                     Interface.subMenu("Give Reviews");
-                    CustomerDL.customerReview();
+                    PersonDL.customerReview();
                     Interface.clear();
                 }
                 else if (option_customer == "6")
                 {
                     Interface.printHeader();
                     Interface.subMenu("Give Ratings");
-                    CustomerDL.customerRating();
+                    PersonDL.customerRating();
                     Interface.clear();
                 }
                 else if (option_customer == "7")

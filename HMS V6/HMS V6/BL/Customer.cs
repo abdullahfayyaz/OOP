@@ -25,61 +25,60 @@ namespace HMS_V6.BL
         }
         public Customer(string name, string id, string contact, string city, string totalPerson, string roomType, int roomNumber, string no_of_stay, string checkIn) : base(name, id, contact, city)
         {
+            base.role = "Customer";
             this.totalPerson = totalPerson;
             this.roomType = roomType;
             this.roomNumber = roomNumber;
             this.no_of_stay = no_of_stay;
             this.checkIn = checkIn;
+            this.bill = 0;
         }
-        public Customer(string name, string id, string contact, string city, string totalPerson, string roomType, int roomNumber, string no_of_stay, string checkIn, float bill) : this(name, id, contact, city, totalPerson, roomType, roomNumber, no_of_stay, checkIn)
-        {
-            this.bill = bill;
-        }
-        public void setTotalPerson(string totalPerson)
+
+        public override void setTotalPerson(string totalPerson)
         {
             this.totalPerson = totalPerson;
         }
-        public string getTotalPerson()
+        public override string getTotalPerson()
         {
             return totalPerson;
         }
-        public void setRoomType(string roomType)
+        public override void setRoomType(string roomType)
         {
             this.roomType = roomType;
         }
-        public string getRoomType()
+        public override string getRoomType()
         {
             return roomType;
         }
-        public void setRoomNumber(int roomNumber)
+        public override void setRoomNumber(int roomNumber)
         {
             this.roomNumber = roomNumber;
         }
-        public int getRoomNumber()
+        public override int getRoomNumber()
         {
             return roomNumber;
         }
-        public void setNoOfStay(string no_of_stay)
+        public override void setNoOfStay(string no_of_stay)
         {
             this.no_of_stay = no_of_stay;
         }
-        public string getNoOfStay()
+        public override string getNoOfStay()
         {
             return no_of_stay;
         }
-        public void setCheckIn(string checkIn)
+        public override void setCheckIn(string checkIn)
         {
             this.checkIn = checkIn;
         }
-        public string getCheckIn()
+        public override string getCheckIn()
         {
             return checkIn;
         }
-        public void setBill(float bill)
+        public override void setBill(float bill)
         {
             this.bill = bill;
         }
-        public float getBill()
+        public override float getBill()
         {
             return bill;
         }

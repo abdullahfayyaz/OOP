@@ -1,0 +1,2 @@
+abdullah,Abdullah1$,manager
+maryam,Maryam1$,customer

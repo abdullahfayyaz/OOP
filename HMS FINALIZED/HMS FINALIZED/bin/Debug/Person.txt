@@ -1,0 +1,4 @@
+Staff,Bilal,12345-1234567-1,02323456789,Lahore,Operation Manger
+Customer,Ali,12345-1234567-1,03212345678,Lahore,1,Single,7/9/2023 3:50:44 PM,7/13/2023 3:50:44 PM,2,0,,,False,False
+Customer,Bilal,12345-1234567-2,03212345678,Lahore,1,Single,7/9/2023 3:50:44 PM,7/20/2023 3:50:44 PM,1,0,,,False,False
+Customer,Maryam,12345-1234567-4,032123454564,Faisalabad,3,Twin,7/9/2023 3:50:44 PM,7/15/2023 3:50:44 PM,4,0,,,False,False

@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINAL\HMS FINAL\obj\Debug\HMS FINAL.csproj.AssemblyReference.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINAL\HMS FINAL\obj\Debug\HMS FINAL.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINAL\HMS FINAL\bin\Debug\HMS FINAL.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINAL\HMS FINAL\bin\Debug\HMS FINAL.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINAL\HMS FINAL\bin\Debug\HMS FINAL.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINAL\HMS FINAL\obj\Debug\HMS FINAL.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINAL\HMS FINAL\obj\Debug\HMS FINAL.pdb

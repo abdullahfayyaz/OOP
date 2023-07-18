@@ -1,0 +1,2 @@
+abdullah,12345678,manager
+maryam_,11223344,customer

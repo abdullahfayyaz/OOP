@@ -1,0 +1,21 @@
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\bin\Debug\HMS FINALIZED.exe.config
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\bin\Debug\HMS FINALIZED.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\bin\Debug\HMS FINALIZED.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\bin\Debug\Guna.UI2.dll
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.AddCustomerUC.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.AdminForm.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.AvailableRoomsUC.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.BookedRoomsUC.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.extra.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.Form1.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.ManagerUC.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.Properties.Resources.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.RemoveCustomerUC.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.SearchCustomer.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS FINALIZED.csproj.GenerateResource.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS FINALIZED.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS FINALIZED.csproj.CopyComplete
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS FINALIZED.exe
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS FINALIZED.pdb
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS_FINALIZED.RoomsCategoryUC.resources
+C:\Users\HP\Documents\STUDY\2nd Semester\OOP TASK\HMS FINALIZED\HMS FINALIZED\obj\Debug\HMS FINALIZED.csproj.AssemblyReference.cache

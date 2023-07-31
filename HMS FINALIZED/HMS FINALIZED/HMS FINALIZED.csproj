@@ -59,6 +59,12 @@
     <Compile Include="AddCustomerUC.Designer.cs">
       <DependentUpon>AddCustomerUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddStaffUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddStaffUC.Designer.cs">
+      <DependentUpon>AddStaffUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,24 @@
     <Compile Include="BookedRoomsUC.Designer.cs">
       <DependentUpon>BookedRoomsUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckoutUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckoutUC.Designer.cs">
+      <DependentUpon>CheckoutUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.cs">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerMainUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerMainUC.Designer.cs">
+      <DependentUpon>CustomerMainUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="DL\PersonDL.cs" />
     <Compile Include="DL\UserDL.cs" />
     <Compile Include="extra.cs">
@@ -105,11 +129,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RatingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RatingUC.Designer.cs">
+      <DependentUpon>RatingUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="RemoveCustomerUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="RemoveCustomerUC.Designer.cs">
       <DependentUpon>RemoveCustomerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveStaffUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RemoveStaffUC.Designer.cs">
+      <DependentUpon>RemoveStaffUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReviewUC.Designer.cs">
+      <DependentUpon>ReviewUC.cs</DependentUpon>
     </Compile>
     <Compile Include="RoomsCategoryUC.cs">
       <SubType>UserControl</SubType>
@@ -123,8 +170,35 @@
     <Compile Include="SearchCustomer.Designer.cs">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateCustomerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomerUC.Designer.cs">
+      <DependentUpon>UpdateCustomerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRatingUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewRatingUC.Designer.cs">
+      <DependentUpon>ViewRatingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReviewUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewReviewUC.Designer.cs">
+      <DependentUpon>ViewReviewUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStaffUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewStaffUC.Designer.cs">
+      <DependentUpon>ViewStaffUC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddCustomerUC.resx">
       <DependentUpon>AddCustomerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStaffUC.resx">
+      <DependentUpon>AddStaffUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
@@ -134,6 +208,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookedRoomsUC.resx">
       <DependentUpon>BookedRoomsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckoutUC.resx">
+      <DependentUpon>CheckoutUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerMainUC.resx">
+      <DependentUpon>CustomerMainUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="extra.resx">
       <DependentUpon>extra.cs</DependentUpon>
@@ -146,16 +229,20 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="RatingUC.resx">
+      <DependentUpon>RatingUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RemoveCustomerUC.resx">
       <DependentUpon>RemoveCustomerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveStaffUC.resx">
+      <DependentUpon>RemoveStaffUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewUC.resx">
+      <DependentUpon>ReviewUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoomsCategoryUC.resx">
       <DependentUpon>RoomsCategoryUC.cs</DependentUpon>
@@ -163,6 +250,19 @@
     <EmbeddedResource Include="SearchCustomer.resx">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomerUC.resx">
+      <DependentUpon>UpdateCustomerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRatingUC.resx">
+      <DependentUpon>ViewRatingUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReviewUC.resx">
+      <DependentUpon>ViewReviewUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStaffUC.resx">
+      <DependentUpon>ViewStaffUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -332,6 +432,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Louis Fitzgerald Hotel - Triple Room.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckoutUC.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel booking.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\review.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

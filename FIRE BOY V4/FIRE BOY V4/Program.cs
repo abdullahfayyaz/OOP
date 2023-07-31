@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
+
 
 namespace FIRE_BOY_V4
 {
@@ -13,6 +15,8 @@ namespace FIRE_BOY_V4
     {
         static void Main(string[] args)
         {
+
+
             // FireBoy Character
 
             Fireboy player = new Fireboy();
@@ -102,6 +106,10 @@ namespace FIRE_BOY_V4
 
             string option_main = "";
             gameTitle();
+
+
+
+            printMazeInFIle(maze);
             while (true)
             {
                 printHead();
@@ -202,6 +210,26 @@ namespace FIRE_BOY_V4
                 }
                 Console.WriteLine();
             }
+        }
+
+        static void printMazeInFIle(char[,] maze)
+        {
+            string customersPath = "maze.txt";
+            StreamWriter file = new StreamWriter(customersPath, false);
+
+            for (int row = 0; row < maze.GetLength(0); row++)
+            {
+                for (int col = 0; col < maze.GetLength(1); col++)
+                {
+                    file.Write(maze[row, col]);
+                }
+                file.WriteLine();
+            }
+
+            file.Flush();
+            file.Close();
+
+
         }
         static void printHead()
         {

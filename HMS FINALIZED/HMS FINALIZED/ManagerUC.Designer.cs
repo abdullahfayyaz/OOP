@@ -43,11 +43,11 @@ namespace HMS_FINALIZED
             // Login_User_name
             // 
             this.Login_User_name.AutoSize = true;
-            this.Login_User_name.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Login_User_name.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_User_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
-            this.Login_User_name.Location = new System.Drawing.Point(93, 26);
+            this.Login_User_name.Location = new System.Drawing.Point(60, 40);
             this.Login_User_name.Name = "Login_User_name";
-            this.Login_User_name.Size = new System.Drawing.Size(146, 31);
+            this.Login_User_name.Size = new System.Drawing.Size(146, 29);
             this.Login_User_name.TabIndex = 13;
             this.Login_User_name.Text = "User Name";
             // 
@@ -90,6 +90,8 @@ namespace HMS_FINALIZED
             this.AccountButton.Name = "AccountButton";
             this.AccountButton.Size = new System.Drawing.Size(51, 45);
             this.AccountButton.TabIndex = 12;
+            this.AccountButton.Click += new System.EventHandler(this.AccountButton_Click);
+            this.AccountButton.MouseHover += new System.EventHandler(this.AccountButton_MouseHover);
             // 
             // guna2DragControl1
             // 

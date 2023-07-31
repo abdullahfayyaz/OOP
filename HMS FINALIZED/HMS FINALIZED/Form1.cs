@@ -15,6 +15,9 @@ namespace HMS_FINALIZED
 {
     public partial class Form1 : Form
     {
+        public static List<Form> formList = new List<Form>();
+        public static string loginName;
+
         public Form1()
         {
             InitializeComponent();
@@ -294,17 +297,24 @@ namespace HMS_FINALIZED
             if(Validation.userName_check(LoginName.Text) && Validation.password_check(LoginPassword.Text))
             {
                 User info = new User(LoginName.Text, LoginPassword.Text);
+                loginName = LoginName.Text;
                 string role = UserDL.checkRole(info);
                 if (role == "manager")
                 {
                     this.Hide();
                     Form adminForm = new AdminForm();
-                    adminForm.Show();
+                    formList.Add(adminForm);
+                    adminForm.ShowDialog();
+                    this.Close();
                     ClearLoginPanelData();
                 }
                 else if (role == "customer")
                 {
-                    MessageBox.Show("WELCOME CUSTOMER");
+                    this.Hide();
+                    Form customerForm = new CustomerForm();
+                    formList.Add(customerForm);
+                    customerForm.ShowDialog();
+                    this.Close();
                     ClearLoginPanelData();
                 }
                 else

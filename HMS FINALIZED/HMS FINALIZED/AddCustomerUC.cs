@@ -24,20 +24,48 @@ namespace HMS_FINALIZED
         {
             Guna2TextBox textBox = (Guna2TextBox)sender;
 
-            // Make sure the text box is not empty
+            // Save the cursor position to restore it after modification
+            int cursorPosition = textBox.SelectionStart;
+
             if (!string.IsNullOrEmpty(textBox.Text))
             {
-                // Convert the first letter to uppercase
-                char firstChar = char.ToUpper(textBox.Text[0]);
+                string originalText = textBox.Text;
 
-                // Convert the remaining letters to lowercase
-                string remainingChars = textBox.Text.Substring(1).ToLower();
+                // Initialize a variable to store the capitalized text
+                string capitalizedText = "";
 
-                // Set the modified text back to the text box
-                textBox.Text = firstChar + remainingChars;
+                // Track whether the next character should be capitalized
+                bool capitalizeNextChar = true;
 
-                // Set the cursor position to the end of the text box
-                textBox.SelectionStart = textBox.Text.Length;
+                // Iterate through each character in the original text
+                foreach (char c in originalText)
+                {
+                    // Capitalize the current character if needed
+                    if (capitalizeNextChar)
+                    {
+                        capitalizedText += char.ToUpper(c);
+                    }
+                    else
+                    {
+                        capitalizedText += char.ToLower(c);
+                    }
+
+                    // Determine if the next character should be capitalized
+                    if (char.IsWhiteSpace(c))
+                    {
+                        capitalizeNextChar = true;
+                    }
+                    else
+                    {
+                        capitalizeNextChar = false;
+                    }
+                }
+
+                // Update the text box with the capitalized text
+                textBox.Text = capitalizedText;
+
+                // Restore the cursor position
+                textBox.SelectionStart = cursorPosition;
             }
         }
 
@@ -123,7 +151,7 @@ namespace HMS_FINALIZED
             }
         }
 
-        private void TextCustomerName_Leave(object sender, EventArgs e)
+        private void TextCustomerName_MouseLeave(object sender, EventArgs e)
         {
             NameField(TextCustomerName);
         }
@@ -137,7 +165,7 @@ namespace HMS_FINALIZED
             }
         }
 
-        private void TextCNIC_Leave(object sender, EventArgs e)
+        private void TextCNIC_MouseLeave(object sender, EventArgs e)
         {
             CNIC_Field(TextCNIC);
         }
@@ -151,7 +179,7 @@ namespace HMS_FINALIZED
             }
         }
 
-        private void TextContact_Leave(object sender, EventArgs e)
+        private void TextContact_MouseLeave(object sender, EventArgs e)
         {
             ContactField(TextContact);
         }

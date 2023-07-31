@@ -10,7 +10,7 @@ namespace HMS_FINALIZED.DL
 {
     class UserDL
     {
-        static private List<User> userList = new List<User>();
+        private static List<User> userList = new List<User>();
         public static bool isValidUsername(string userName)
         {
             bool isNew = true;

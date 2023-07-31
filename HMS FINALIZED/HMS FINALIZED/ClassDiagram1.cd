@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="+ contains">
+    <Position X="5.792" Y="1.675" Height="0.291" Width="0.8" />
+  </Comment>
+  <Class Name="HMS_FINALIZED.BL.Customer" Collapsed="true">
+    <Position X="1.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAIAAAACAAAAgEBAAIAAAAwAQACMAEACAQAAAgkA=</HashCode>
+      <FileName>BL\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Room" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HMS_FINALIZED.BL.Person" Collapsed="true">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAjAIAAAAAAAAAIGAAAKBwAAAAEAgMAEACAAAAAAkA=</HashCode>
+      <FileName>BL\Person.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HMS_FINALIZED.BL.Room" Collapsed="true">
+    <Position X="1.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACIIAAAAAEEAhAQAAAAAAECACAAAAFAAAEAQAAA=</HashCode>
+      <FileName>BL\Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_FINALIZED.BL.StaffMember" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\StaffMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_FINALIZED.BL.User" Collapsed="true">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAABAAAAAAAAACAQAAAgEAAAA=</HashCode>
+      <FileName>BL\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_FINALIZED.DL.PersonDL" Collapsed="true">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAgBEDECAAEAAAAUARAAEACIAAwAIAAAAAAEAggAAAA=</HashCode>
+      <FileName>DL\PersonDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HMS_FINALIZED.DL.UserDL" Collapsed="true">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgACAIAAICAAAAAAAAEAAQAAAAAAAAAAAAAAAgBA=</HashCode>
+      <FileName>DL\UserDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

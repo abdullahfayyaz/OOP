@@ -19,7 +19,7 @@ namespace HMS_FINALIZED
             PersonDL.loadData();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminForm());
+            Application.Run(new Form1());
         }
     }
 }

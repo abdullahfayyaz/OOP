@@ -49,11 +49,11 @@ namespace HMS_FINALIZED
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(155, 55);
+            this.label1.Location = new System.Drawing.Point(212, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 57);
+            this.label1.Size = new System.Drawing.Size(491, 57);
             this.label1.TabIndex = 33;
-            this.label1.Text = "REMOVE CUSTOMER";
+            this.label1.Text = "CANCEL BOOKING";
             // 
             // label3
             // 

@@ -13,6 +13,32 @@ namespace HMS_FINALIZED.BL
         protected string contact;
         protected string city;
         protected string role;
+
+        public string Name { get => name; set => name = value; }
+        public string Id { get => id; set => id = value; }
+        public string Contact { get => contact; set => contact = value; }
+        public string City { get => city; set => city = value; }
+        public string Role { get => role; set => role = value; }
+        public virtual string TotalPerson { get; set; }
+        public virtual string RoomType { get; set; }
+        public virtual int RoomNumber { get; set; }
+        public virtual string CheckInDate { get; set; }
+        public virtual string CheckOutDate { get; set; }
+        public virtual float Bill { get; set; }
+        public virtual string Review { get; set; }
+        public virtual string Rating { get; set; }
+        public virtual bool ReviewCheck { get; set; }
+        public virtual bool RatingCheck { get; set; }
+        public virtual string Designation { get; set; }
+
+        internal User User
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public Person()
         {
 
@@ -26,135 +52,6 @@ namespace HMS_FINALIZED.BL
         {
             this.contact = contact;
             this.city = city;
-        }
-
-        public void setName(string name)
-        {
-            this.name = name;
-        }
-        public string getName()
-        {
-            return name;
-        }
-        public void setID(string id)
-        {
-            this.id = id;
-        }
-        public string getID()
-        {
-            return id;
-        }
-        public void setContact(string contact)
-        {
-            this.contact = contact;
-        }
-        public string getContact()
-        {
-            return contact;
-        }
-        public void setCity(string city)
-        {
-            this.city = city;
-        }
-        public string getCity()
-        {
-            return city;
-        }
-        public void setRole(string role)
-        {
-            this.role = role;
-        }
-        public string getRole()
-        {
-            return role;
-        }
-        public virtual void setTotalPerson(string totalPerson)
-        {
-
-        }
-        public virtual string getTotalPerson()
-        {
-            return null;
-        }
-        public virtual void setRoomType(string roomType)
-        {
-
-        }
-        public virtual string getRoomType()
-        {
-            return null;
-        }
-        public virtual void setRoomNumber(int roomNumber)
-        {
-
-        }
-        public virtual int getRoomNumber()
-        {
-            return 0;
-        }
-        public virtual void setCheckInDate(string checkInDate)
-        {
-
-        }
-        public virtual string getCheckInDate()
-        {
-            return null;
-        }
-        public virtual void setCheckOutDate(string checkOutDate)
-        {
-           
-        }
-        public virtual string getCheckOutDate()
-        {
-            return null;
-        }
-        public virtual void setBill(float bill)
-        {
-
-        }
-        public virtual float getBill()
-        {
-            return 0F;
-        }
-        public virtual void setReview(string review)
-        {
-
-        }
-        public virtual string getReview()
-        {
-            return null;
-        }
-        public virtual void setRating(string rating)
-        {
-
-        }
-        public virtual string getRating()
-        {
-            return null;
-        }
-        public virtual void setReviewCheck(bool reviewCheck)
-        {
-
-        }
-        public virtual bool getReviewCheck()
-        {
-            return false;
-        }
-        public virtual void setRatingCheck(bool ratingCheck)
-        {
-
-        }
-        public virtual bool getRatingCheck()
-        {
-            return false;
-        }
-        public virtual void setDuty(string duty)
-        {
-
-        }
-        public virtual string getDuty()
-        {
-            return null;
         }
     }
 }

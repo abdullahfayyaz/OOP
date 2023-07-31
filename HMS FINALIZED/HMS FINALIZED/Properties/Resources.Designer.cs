@@ -213,6 +213,16 @@ namespace HMS_FINALIZED.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CheckoutUC {
+            get {
+                object obj = ResourceManager.GetObject("CheckoutUC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap corner {
             get {
                 object obj = ResourceManager.GetObject("corner", resourceCulture);
@@ -353,6 +363,16 @@ namespace HMS_FINALIZED.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Hotel_booking {
+            get {
+                object obj = ResourceManager.GetObject("Hotel booking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap house_845022 {
             get {
                 object obj = ResourceManager.GetObject("house_845022", resourceCulture);
@@ -443,6 +463,16 @@ namespace HMS_FINALIZED.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap review {
+            get {
+                object obj = ResourceManager.GetObject("review", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reviews {
             get {
                 object obj = ResourceManager.GetObject("reviews", resourceCulture);
@@ -506,6 +536,16 @@ namespace HMS_FINALIZED.Properties {
         internal static System.Drawing.Bitmap Staff {
             get {
                 object obj = ResourceManager.GetObject("Staff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stars {
+            get {
+                object obj = ResourceManager.GetObject("stars", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

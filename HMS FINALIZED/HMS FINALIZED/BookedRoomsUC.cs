@@ -17,18 +17,23 @@ namespace HMS_FINALIZED
         public BookedRoomsUC()
         {
             InitializeComponent();
-            ViewBookedRooms();
         }
 
-        private void ViewBookedRooms()
+        public void ShowBookedRoomDataGridView(DataTable bookedRoomsDataTable)
         {
-            List<Person> CustomerList = new List<Person>();
-            foreach (Person customer in PersonDL.PersonList)
-            {
-                CustomerList.Add(customer);
-            }
-            dataGridView1.DataSource = CustomerList;
-            dataGridView1.Show();
+            BookedRoomsDataGridView.DataSource = bookedRoomsDataTable;
+            BookedRoomsDataGridView.Refresh();
+        }
+        public void setColumnHeaders()
+        {
+            BookedRoomsDataGridView.Columns["Id"].HeaderText = "CNIC Number";
+            BookedRoomsDataGridView.Columns["Contact"].HeaderText = "Contact Number";
+            BookedRoomsDataGridView.Columns["City"].HeaderText = "City of Residence";
+            BookedRoomsDataGridView.Columns["TotalPerson"].HeaderText = "Total Person";
+            BookedRoomsDataGridView.Columns["RoomType"].HeaderText = "Room Type";
+            BookedRoomsDataGridView.Columns["RoomNumber"].HeaderText = "Room Number";
+            BookedRoomsDataGridView.Columns["CheckInDate"].HeaderText = "Check-in Date";
+            BookedRoomsDataGridView.Columns["CheckOutDate"].HeaderText = "Check-out Date";
         }
     }
 }

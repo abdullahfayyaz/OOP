@@ -30,10 +30,24 @@ namespace HMS_FINALIZED
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.ViewStaffButton = new Guna.UI2.WinForms.Guna2Button();
+            this.RemoveStaffButton = new Guna.UI2.WinForms.Guna2Button();
+            this.AddStaffButton = new Guna.UI2.WinForms.Guna2Button();
+            this.ViewRatingButton = new Guna.UI2.WinForms.Guna2Button();
+            this.ViewReviewsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.CheckoutButton = new Guna.UI2.WinForms.Guna2Button();
+            this.RoomTypeButton = new Guna.UI2.WinForms.Guna2Button();
+            this.AvailableRoomsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.BookedRoomsButton = new Guna.UI2.WinForms.Guna2Button();
+            this.RemoveCustomerButton = new Guna.UI2.WinForms.Guna2Button();
+            this.SearchCustomerButton = new Guna.UI2.WinForms.Guna2Button();
+            this.UpdateCustomerButton = new Guna.UI2.WinForms.Guna2Button();
+            this.AddCustomerButton = new Guna.UI2.WinForms.Guna2Button();
+            this.Home = new System.Windows.Forms.PictureBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -52,32 +66,25 @@ namespace HMS_FINALIZED
             this.guna2DragControl7 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2DragControl8 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.viewReviewUC1 = new HMS_FINALIZED.ViewReviewUC();
+            this.updateCustomerUC1 = new HMS_FINALIZED.UpdateCustomerUC();
+            this.viewStaffUC1 = new HMS_FINALIZED.ViewStaffUC();
+            this.removeStaffUC1 = new HMS_FINALIZED.RemoveStaffUC();
+            this.addStaffUC1 = new HMS_FINALIZED.AddStaffUC();
+            this.checkoutUC1 = new HMS_FINALIZED.CheckoutUC();
+            this.roomsCategoryUC1 = new HMS_FINALIZED.RoomsCategoryUC();
             this.availableRoomsUC1 = new HMS_FINALIZED.AvailableRoomsUC();
             this.bookedRoomsUC1 = new HMS_FINALIZED.BookedRoomsUC();
             this.removeCustomerUC1 = new HMS_FINALIZED.RemoveCustomerUC();
             this.searchCustomer1 = new HMS_FINALIZED.SearchCustomer();
             this.addCustomerUC1 = new HMS_FINALIZED.AddCustomerUC();
             this.managerUC1 = new HMS_FINALIZED.ManagerUC();
-            this.ViewStaffButton = new Guna.UI2.WinForms.Guna2Button();
-            this.RemoveStaffButton = new Guna.UI2.WinForms.Guna2Button();
-            this.AddStaffButton = new Guna.UI2.WinForms.Guna2Button();
-            this.ViewRatingButton = new Guna.UI2.WinForms.Guna2Button();
-            this.ViewReviewsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.CheckoutButton = new Guna.UI2.WinForms.Guna2Button();
-            this.RoomTypeButton = new Guna.UI2.WinForms.Guna2Button();
-            this.AvailableRoomsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.BookedRoomsButton = new Guna.UI2.WinForms.Guna2Button();
-            this.RemoveCustomerButton = new Guna.UI2.WinForms.Guna2Button();
-            this.SearchCustomerButton = new Guna.UI2.WinForms.Guna2Button();
-            this.UpdateCustomerButton = new Guna.UI2.WinForms.Guna2Button();
-            this.AddCustomerButton = new Guna.UI2.WinForms.Guna2Button();
-            this.Home = new System.Windows.Forms.PictureBox();
-            this.roomsCategoryUC1 = new HMS_FINALIZED.RoomsCategoryUC();
+            this.viewRatingUC1 = new HMS_FINALIZED.ViewRatingUC();
             this.guna2ShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Home)).BeginInit();
             this.guna2GradientPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Home)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -112,224 +119,6 @@ namespace HMS_FINALIZED
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(348, 749);
             this.guna2ShadowPanel1.TabIndex = 0;
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.TargetControl = this.guna2GradientPanel1;
-            this.guna2DragControl1.TransparentWhileDrag = false;
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2Transition1.SetDecoration(this.guna2GradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(142)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
-            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(1239, 0);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(23, 786);
-            this.guna2GradientPanel1.TabIndex = 7;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2Transition1.SetDecoration(this.guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1130, 2);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(37, 27);
-            this.guna2ControlBox2.TabIndex = 14;
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Transition1.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.DimGray;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1173, 2);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(37, 27);
-            this.guna2ControlBox1.TabIndex = 13;
-            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2Transition1.SetDecoration(this.guna2GradientPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(142)))));
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
-            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(23, 786);
-            this.guna2GradientPanel2.TabIndex = 8;
-            // 
-            // guna2GradientPanel3
-            // 
-            this.guna2Transition1.SetDecoration(this.guna2GradientPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(142)))));
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
-            this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(23, 763);
-            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(1216, 23);
-            this.guna2GradientPanel3.TabIndex = 9;
-            // 
-            // guna2GradientPanel4
-            // 
-            this.guna2GradientPanel4.Controls.Add(this.guna2ControlBox1);
-            this.guna2GradientPanel4.Controls.Add(this.guna2ControlBox2);
-            this.guna2Transition1.SetDecoration(this.guna2GradientPanel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2GradientPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(142)))));
-            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
-            this.guna2GradientPanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(23, 0);
-            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
-            this.guna2GradientPanel4.Size = new System.Drawing.Size(1216, 32);
-            this.guna2GradientPanel4.TabIndex = 15;
-            // 
-            // guna2AnimateWindow1
-            // 
-            this.guna2AnimateWindow1.TargetForm = this;
-            // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation2;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.roomsCategoryUC1);
-            this.panel1.Controls.Add(this.availableRoomsUC1);
-            this.panel1.Controls.Add(this.bookedRoomsUC1);
-            this.panel1.Controls.Add(this.removeCustomerUC1);
-            this.panel1.Controls.Add(this.searchCustomer1);
-            this.panel1.Controls.Add(this.addCustomerUC1);
-            this.panel1.Controls.Add(this.managerUC1);
-            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel1.Location = new System.Drawing.Point(379, 35);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(854, 725);
-            this.panel1.TabIndex = 16;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
-            // guna2DragControl2
-            // 
-            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl2.TargetControl = this.guna2GradientPanel2;
-            this.guna2DragControl2.TransparentWhileDrag = false;
-            // 
-            // guna2DragControl3
-            // 
-            this.guna2DragControl3.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl3.TargetControl = this.guna2GradientPanel3;
-            this.guna2DragControl3.TransparentWhileDrag = false;
-            // 
-            // guna2DragControl4
-            // 
-            this.guna2DragControl4.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl4.TargetControl = this.guna2GradientPanel4;
-            this.guna2DragControl4.TransparentWhileDrag = false;
-            // 
-            // guna2DragControl6
-            // 
-            this.guna2DragControl6.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl6.TransparentWhileDrag = false;
-            // 
-            // guna2DragControl7
-            // 
-            this.guna2DragControl7.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl7.TargetControl = this.guna2ShadowPanel1;
-            this.guna2DragControl7.TransparentWhileDrag = false;
-            // 
-            // guna2DragControl8
-            // 
-            this.guna2DragControl8.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl8.TransparentWhileDrag = false;
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // availableRoomsUC1
-            // 
-            this.availableRoomsUC1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.availableRoomsUC1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.availableRoomsUC1.Location = new System.Drawing.Point(0, 0);
-            this.availableRoomsUC1.Margin = new System.Windows.Forms.Padding(6);
-            this.availableRoomsUC1.Name = "availableRoomsUC1";
-            this.availableRoomsUC1.Size = new System.Drawing.Size(1281, 1042);
-            this.availableRoomsUC1.TabIndex = 5;
-            // 
-            // bookedRoomsUC1
-            // 
-            this.bookedRoomsUC1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.bookedRoomsUC1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.bookedRoomsUC1.Location = new System.Drawing.Point(-3, 1);
-            this.bookedRoomsUC1.Name = "bookedRoomsUC1";
-            this.bookedRoomsUC1.Size = new System.Drawing.Size(854, 725);
-            this.bookedRoomsUC1.TabIndex = 4;
-            // 
-            // removeCustomerUC1
-            // 
-            this.removeCustomerUC1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.removeCustomerUC1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.removeCustomerUC1.Location = new System.Drawing.Point(-3, 3);
-            this.removeCustomerUC1.Name = "removeCustomerUC1";
-            this.removeCustomerUC1.Size = new System.Drawing.Size(854, 725);
-            this.removeCustomerUC1.TabIndex = 3;
-            // 
-            // searchCustomer1
-            // 
-            this.searchCustomer1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.searchCustomer1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.searchCustomer1.Location = new System.Drawing.Point(0, 0);
-            this.searchCustomer1.Name = "searchCustomer1";
-            this.searchCustomer1.Size = new System.Drawing.Size(854, 725);
-            this.searchCustomer1.TabIndex = 2;
-            // 
-            // addCustomerUC1
-            // 
-            this.addCustomerUC1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.addCustomerUC1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.addCustomerUC1.Location = new System.Drawing.Point(0, 0);
-            this.addCustomerUC1.Name = "addCustomerUC1";
-            this.addCustomerUC1.Size = new System.Drawing.Size(854, 725);
-            this.addCustomerUC1.TabIndex = 1;
-            // 
-            // managerUC1
-            // 
-            this.managerUC1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.managerUC1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.managerUC1.Location = new System.Drawing.Point(0, 0);
-            this.managerUC1.Name = "managerUC1";
-            this.managerUC1.Size = new System.Drawing.Size(854, 726);
-            this.managerUC1.TabIndex = 0;
-            // 
             // ViewStaffButton
             // 
             this.ViewStaffButton.Animated = true;
@@ -354,6 +143,7 @@ namespace HMS_FINALIZED
             this.ViewStaffButton.Size = new System.Drawing.Size(288, 45);
             this.ViewStaffButton.TabIndex = 13;
             this.ViewStaffButton.Text = "View Staff Member";
+            this.ViewStaffButton.Click += new System.EventHandler(this.ViewStaffButton_Click);
             // 
             // RemoveStaffButton
             // 
@@ -379,6 +169,7 @@ namespace HMS_FINALIZED
             this.RemoveStaffButton.Size = new System.Drawing.Size(314, 45);
             this.RemoveStaffButton.TabIndex = 12;
             this.RemoveStaffButton.Text = "Remove Staff Member";
+            this.RemoveStaffButton.Click += new System.EventHandler(this.RemoveStaffButton_Click);
             // 
             // AddStaffButton
             // 
@@ -404,6 +195,7 @@ namespace HMS_FINALIZED
             this.AddStaffButton.Size = new System.Drawing.Size(280, 45);
             this.AddStaffButton.TabIndex = 11;
             this.AddStaffButton.Text = "Add Staff Member";
+            this.AddStaffButton.Click += new System.EventHandler(this.AddStaffButton_Click);
             // 
             // ViewRatingButton
             // 
@@ -429,6 +221,7 @@ namespace HMS_FINALIZED
             this.ViewRatingButton.Size = new System.Drawing.Size(225, 45);
             this.ViewRatingButton.TabIndex = 10;
             this.ViewRatingButton.Text = "View Rating";
+            this.ViewRatingButton.Click += new System.EventHandler(this.ViewRatingButton_Click);
             // 
             // ViewReviewsButton
             // 
@@ -454,6 +247,7 @@ namespace HMS_FINALIZED
             this.ViewReviewsButton.Size = new System.Drawing.Size(236, 45);
             this.ViewReviewsButton.TabIndex = 9;
             this.ViewReviewsButton.Text = "View Reviews";
+            this.ViewReviewsButton.Click += new System.EventHandler(this.ViewReviewsButton_Click);
             // 
             // CheckoutButton
             // 
@@ -479,6 +273,7 @@ namespace HMS_FINALIZED
             this.CheckoutButton.Size = new System.Drawing.Size(211, 45);
             this.CheckoutButton.TabIndex = 8;
             this.CheckoutButton.Text = "Checkout";
+            this.CheckoutButton.Click += new System.EventHandler(this.CheckoutButton_Click);
             // 
             // RoomTypeButton
             // 
@@ -634,6 +429,7 @@ namespace HMS_FINALIZED
             this.UpdateCustomerButton.Size = new System.Drawing.Size(257, 45);
             this.UpdateCustomerButton.TabIndex = 2;
             this.UpdateCustomerButton.Text = "Update Customer";
+            this.UpdateCustomerButton.Click += new System.EventHandler(this.UpdateCustomerButton_Click);
             // 
             // AddCustomerButton
             // 
@@ -674,6 +470,230 @@ namespace HMS_FINALIZED
             this.Home.Click += new System.EventHandler(this.Home_Click);
             this.Home.MouseHover += new System.EventHandler(this.Home_MouseHover);
             // 
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl1.TargetControl = this.guna2GradientPanel1;
+            this.guna2DragControl1.TransparentWhileDrag = false;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2Transition1.SetDecoration(this.guna2GradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(142)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
+            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(1239, 0);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(23, 786);
+            this.guna2GradientPanel1.TabIndex = 7;
+            // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.DimGray;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1130, 2);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(37, 27);
+            this.guna2ControlBox2.TabIndex = 14;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Transition1.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.DimGray;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1173, 2);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(37, 27);
+            this.guna2ControlBox1.TabIndex = 13;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2Transition1.SetDecoration(this.guna2GradientPanel2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(142)))));
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
+            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(23, 786);
+            this.guna2GradientPanel2.TabIndex = 8;
+            // 
+            // guna2GradientPanel3
+            // 
+            this.guna2Transition1.SetDecoration(this.guna2GradientPanel3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(142)))));
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
+            this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(23, 763);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(1216, 23);
+            this.guna2GradientPanel3.TabIndex = 9;
+            // 
+            // guna2GradientPanel4
+            // 
+            this.guna2GradientPanel4.Controls.Add(this.guna2ControlBox1);
+            this.guna2GradientPanel4.Controls.Add(this.guna2ControlBox2);
+            this.guna2Transition1.SetDecoration(this.guna2GradientPanel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2GradientPanel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2GradientPanel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(33)))), ((int)(((byte)(142)))));
+            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(43)))));
+            this.guna2GradientPanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(23, 0);
+            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(1216, 32);
+            this.guna2GradientPanel4.TabIndex = 15;
+            // 
+            // guna2AnimateWindow1
+            // 
+            this.guna2AnimateWindow1.TargetForm = this;
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.viewRatingUC1);
+            this.panel1.Controls.Add(this.viewReviewUC1);
+            this.panel1.Controls.Add(this.updateCustomerUC1);
+            this.panel1.Controls.Add(this.viewStaffUC1);
+            this.panel1.Controls.Add(this.removeStaffUC1);
+            this.panel1.Controls.Add(this.addStaffUC1);
+            this.panel1.Controls.Add(this.checkoutUC1);
+            this.panel1.Controls.Add(this.roomsCategoryUC1);
+            this.panel1.Controls.Add(this.availableRoomsUC1);
+            this.panel1.Controls.Add(this.bookedRoomsUC1);
+            this.panel1.Controls.Add(this.removeCustomerUC1);
+            this.panel1.Controls.Add(this.searchCustomer1);
+            this.panel1.Controls.Add(this.addCustomerUC1);
+            this.panel1.Controls.Add(this.managerUC1);
+            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel1.Location = new System.Drawing.Point(379, 35);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(854, 725);
+            this.panel1.TabIndex = 16;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // guna2DragControl2
+            // 
+            this.guna2DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl2.TargetControl = this.guna2GradientPanel2;
+            this.guna2DragControl2.TransparentWhileDrag = false;
+            // 
+            // guna2DragControl3
+            // 
+            this.guna2DragControl3.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl3.TargetControl = this.guna2GradientPanel3;
+            this.guna2DragControl3.TransparentWhileDrag = false;
+            // 
+            // guna2DragControl4
+            // 
+            this.guna2DragControl4.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl4.TargetControl = this.guna2GradientPanel4;
+            this.guna2DragControl4.TransparentWhileDrag = false;
+            // 
+            // guna2DragControl6
+            // 
+            this.guna2DragControl6.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl6.TransparentWhileDrag = false;
+            // 
+            // guna2DragControl7
+            // 
+            this.guna2DragControl7.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl7.TargetControl = this.guna2ShadowPanel1;
+            this.guna2DragControl7.TransparentWhileDrag = false;
+            // 
+            // guna2DragControl8
+            // 
+            this.guna2DragControl8.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2DragControl8.TransparentWhileDrag = false;
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // viewReviewUC1
+            // 
+            this.viewReviewUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.viewReviewUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.viewReviewUC1.Location = new System.Drawing.Point(-3, 3);
+            this.viewReviewUC1.Name = "viewReviewUC1";
+            this.viewReviewUC1.Size = new System.Drawing.Size(854, 725);
+            this.viewReviewUC1.TabIndex = 21;
+            // 
+            // updateCustomerUC1
+            // 
+            this.updateCustomerUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.updateCustomerUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.updateCustomerUC1.Location = new System.Drawing.Point(-3, 3);
+            this.updateCustomerUC1.Name = "updateCustomerUC1";
+            this.updateCustomerUC1.Size = new System.Drawing.Size(854, 725);
+            this.updateCustomerUC1.TabIndex = 20;
+            // 
+            // viewStaffUC1
+            // 
+            this.viewStaffUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.viewStaffUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.viewStaffUC1.Location = new System.Drawing.Point(0, 0);
+            this.viewStaffUC1.Name = "viewStaffUC1";
+            this.viewStaffUC1.Size = new System.Drawing.Size(854, 725);
+            this.viewStaffUC1.TabIndex = 19;
+            // 
+            // removeStaffUC1
+            // 
+            this.removeStaffUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.removeStaffUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.removeStaffUC1.Location = new System.Drawing.Point(0, 0);
+            this.removeStaffUC1.Name = "removeStaffUC1";
+            this.removeStaffUC1.Size = new System.Drawing.Size(854, 725);
+            this.removeStaffUC1.TabIndex = 18;
+            // 
+            // addStaffUC1
+            // 
+            this.addStaffUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.addStaffUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.addStaffUC1.Location = new System.Drawing.Point(3, 3);
+            this.addStaffUC1.Name = "addStaffUC1";
+            this.addStaffUC1.Size = new System.Drawing.Size(854, 725);
+            this.addStaffUC1.TabIndex = 17;
+            // 
+            // checkoutUC1
+            // 
+            this.checkoutUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.checkoutUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.checkoutUC1.Location = new System.Drawing.Point(-3, 3);
+            this.checkoutUC1.Name = "checkoutUC1";
+            this.checkoutUC1.Size = new System.Drawing.Size(854, 725);
+            this.checkoutUC1.TabIndex = 17;
+            // 
             // roomsCategoryUC1
             // 
             this.roomsCategoryUC1.BackColor = System.Drawing.Color.White;
@@ -682,6 +702,70 @@ namespace HMS_FINALIZED
             this.roomsCategoryUC1.Name = "roomsCategoryUC1";
             this.roomsCategoryUC1.Size = new System.Drawing.Size(854, 725);
             this.roomsCategoryUC1.TabIndex = 14;
+            // 
+            // availableRoomsUC1
+            // 
+            this.availableRoomsUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.availableRoomsUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.availableRoomsUC1.Location = new System.Drawing.Point(0, 0);
+            this.availableRoomsUC1.Margin = new System.Windows.Forms.Padding(6);
+            this.availableRoomsUC1.Name = "availableRoomsUC1";
+            this.availableRoomsUC1.Size = new System.Drawing.Size(1281, 1042);
+            this.availableRoomsUC1.TabIndex = 5;
+            // 
+            // bookedRoomsUC1
+            // 
+            this.bookedRoomsUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.bookedRoomsUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.bookedRoomsUC1.Location = new System.Drawing.Point(-3, 1);
+            this.bookedRoomsUC1.Name = "bookedRoomsUC1";
+            this.bookedRoomsUC1.Size = new System.Drawing.Size(854, 725);
+            this.bookedRoomsUC1.TabIndex = 4;
+            // 
+            // removeCustomerUC1
+            // 
+            this.removeCustomerUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.removeCustomerUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.removeCustomerUC1.Location = new System.Drawing.Point(-3, 3);
+            this.removeCustomerUC1.Name = "removeCustomerUC1";
+            this.removeCustomerUC1.Size = new System.Drawing.Size(854, 725);
+            this.removeCustomerUC1.TabIndex = 3;
+            // 
+            // searchCustomer1
+            // 
+            this.searchCustomer1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.searchCustomer1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.searchCustomer1.Location = new System.Drawing.Point(0, 0);
+            this.searchCustomer1.Name = "searchCustomer1";
+            this.searchCustomer1.Size = new System.Drawing.Size(854, 725);
+            this.searchCustomer1.TabIndex = 2;
+            // 
+            // addCustomerUC1
+            // 
+            this.addCustomerUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.addCustomerUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.addCustomerUC1.Location = new System.Drawing.Point(0, 0);
+            this.addCustomerUC1.Name = "addCustomerUC1";
+            this.addCustomerUC1.Size = new System.Drawing.Size(854, 725);
+            this.addCustomerUC1.TabIndex = 1;
+            // 
+            // managerUC1
+            // 
+            this.managerUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.managerUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.managerUC1.Location = new System.Drawing.Point(0, 0);
+            this.managerUC1.Name = "managerUC1";
+            this.managerUC1.Size = new System.Drawing.Size(854, 726);
+            this.managerUC1.TabIndex = 0;
+            // 
+            // viewRatingUC1
+            // 
+            this.viewRatingUC1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.viewRatingUC1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.viewRatingUC1.Location = new System.Drawing.Point(3, 3);
+            this.viewRatingUC1.Name = "viewRatingUC1";
+            this.viewRatingUC1.Size = new System.Drawing.Size(854, 725);
+            this.viewRatingUC1.TabIndex = 22;
             // 
             // AdminForm
             // 
@@ -701,10 +785,10 @@ namespace HMS_FINALIZED
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
             this.guna2ShadowPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Home)).EndInit();
             this.guna2GradientPanel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Home)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -751,5 +835,12 @@ namespace HMS_FINALIZED
         private BookedRoomsUC bookedRoomsUC1;
         private AvailableRoomsUC availableRoomsUC1;
         private RoomsCategoryUC roomsCategoryUC1;
+        private CheckoutUC checkoutUC1;
+        private AddStaffUC addStaffUC1;
+        private RemoveStaffUC removeStaffUC1;
+        private ViewStaffUC viewStaffUC1;
+        private UpdateCustomerUC updateCustomerUC1;
+        private ViewReviewUC viewReviewUC1;
+        private ViewRatingUC viewRatingUC1;
     }
 }

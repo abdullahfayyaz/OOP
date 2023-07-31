@@ -243,7 +243,7 @@ namespace HMS_FINALIZED
             this.TextContact.Size = new System.Drawing.Size(312, 42);
             this.TextContact.TabIndex = 55;
             this.TextContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextContact_KeyPress);
-            this.TextContact.Leave += new System.EventHandler(this.TextContact_Leave);
+            this.TextContact.MouseLeave += new System.EventHandler(this.TextContact_MouseLeave);
             // 
             // TextCNIC
             // 
@@ -269,7 +269,7 @@ namespace HMS_FINALIZED
             this.TextCNIC.Size = new System.Drawing.Size(312, 42);
             this.TextCNIC.TabIndex = 54;
             this.TextCNIC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextCNIC_KeyPress);
-            this.TextCNIC.Leave += new System.EventHandler(this.TextCNIC_Leave);
+            this.TextCNIC.MouseLeave += new System.EventHandler(this.TextCNIC_MouseLeave);
             // 
             // TextCustomerName
             // 
@@ -296,7 +296,7 @@ namespace HMS_FINALIZED
             this.TextCustomerName.TabIndex = 53;
             this.TextCustomerName.TextChanged += new System.EventHandler(this.TextCustomerName_TextChanged);
             this.TextCustomerName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextCustomerName_KeyPress);
-            this.TextCustomerName.Leave += new System.EventHandler(this.TextCustomerName_Leave);
+            this.TextCustomerName.MouseLeave += new System.EventHandler(this.TextCustomerName_MouseLeave);
             // 
             // label10
             // 
@@ -382,9 +382,9 @@ namespace HMS_FINALIZED
             this.label3.ForeColor = System.Drawing.Color.Purple;
             this.label3.Location = new System.Drawing.Point(246, 48);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(434, 57);
+            this.label3.Size = new System.Drawing.Size(446, 57);
             this.label3.TabIndex = 44;
-            this.label3.Text = "ADD CUSTOMER";
+            this.label3.Text = "ROOM BOOKING";
             // 
             // errorProvider1
             // 

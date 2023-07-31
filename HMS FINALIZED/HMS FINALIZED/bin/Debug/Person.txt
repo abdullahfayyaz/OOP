@@ -1,4 +1,4 @@
 Staff,Bilal,12345-1234567-1,02323456789,Lahore,Operation Manger
-Customer,Ali,12345-1234567-1,03212345678,Lahore,1,Single,7/9/2023 3:50:44 PM,7/13/2023 3:50:44 PM,2,0,,,False,False
-Customer,Bilal,12345-1234567-2,03212345678,Lahore,1,Single,7/9/2023 3:50:44 PM,7/20/2023 3:50:44 PM,1,0,,,False,False
-Customer,Maryam,12345-1234567-4,032123454564,Faisalabad,3,Twin,7/9/2023 3:50:44 PM,7/15/2023 3:50:44 PM,4,0,,,False,False
+Customer,Ali,12345-1234567-1,032123234565,Lahore,2,Select an option,7/29/2023 10:40:57 PM,8/9/2023 3:50:44 PM,2,0,Nice,,True,False
+Customer,Danish,12345-1234567-4,03213456456,Karachi,2,Double,8/1/2023 10:40:57 PM,8/9/2023 3:50:44 PM,3,0,,,False,False
+Customer,Hamza,12345-1234567-5,03213456456,Karachi,2,Double,8/1/2023 10:40:57 PM,8/9/2023 3:50:44 PM,3,0,Nice,5,True,True

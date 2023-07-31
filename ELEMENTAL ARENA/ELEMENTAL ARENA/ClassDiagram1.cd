@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="+ have">
+    <Position X="3.308" Y="0.842" Height="0.291" Width="0.7" />
+  </Comment>
+  <Comment CommentText="+ contains">
+    <Position X="5.7" Y="1.433" Height="0.291" Width="0.858" />
+  </Comment>
+  <Class Name="ELEMENTAL_ARENA.GameGL.GameGrid" Collapsed="true">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEBAAAAAAEIAAABAAIACAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\GameGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.GameCell" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAQAQAAAAwACICIAAADoAAAAAAACYAA=</HashCode>
+      <FileName>GameGL\GameCell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameGrid" />
+      <Property Name="GameDirection" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.GameObject" Collapsed="true">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAgAAAAAABAAAAEgAAQBAAAEAAEAAAABA=</HashCode>
+      <FileName>GameGL\GameObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameCell" />
+      <Property Name="GameObjectType1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.Fury" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iAAJAJCAEQABABSQRAQMIEIABgkgIACAAOAAAAgBAgg=</HashCode>
+      <FileName>GameGL\Fury.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.Enemy" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAJAAAQgAIASAQAAAAEAAQAkABAAFAAAABBEAAAA=</HashCode>
+      <FileName>GameGL\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.Obstacles" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\Obstacles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.Bullet" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAACAAAAAABAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.HorizontalEnemy" Collapsed="true">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAJAAAQAEAASQAAAAAEIAAAgAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>GameGL\HorizontalEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.VerticalEnemy" Collapsed="true">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAJAAAQAEAASQAAAAAEIAAAgAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>GameGL\VerticalEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.SmartEnemy" Collapsed="true">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAJAAAQAEAASQAAAAAEIAAAgAAQAAAAAAAAAAAAg=</HashCode>
+      <FileName>GameGL\SmartEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.RandomEnemy" Collapsed="true">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAAJAAAQAEAASQAAAAAEIAAAgAAQAAAAQAAAAAAAg=</HashCode>
+      <FileName>GameGL\RandomEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.PlayerBullet" Collapsed="true">
+    <Position X="7.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIACAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\PlayerBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.EnemyBullet" Collapsed="true">
+    <Position X="9.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIACAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\EnemyBullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ELEMENTAL_ARENA.GameGL.Game" Collapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAEAAAAIAAAAABAAAAAAAAAAAAAAABAAAAAAIAAAA=</HashCode>
+      <FileName>GameGL\Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GameObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="ELEMENTAL_ARENA.GameGL.GameDirection" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>GameGL\GameDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ELEMENTAL_ARENA.GameGL.GameObjectType" Collapsed="true">
+    <Position X="1" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgCAAAAAMAQAAAAQAIAABAAgACAAAAIAABAAAAAAE=</HashCode>
+      <FileName>GameGL\GameObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

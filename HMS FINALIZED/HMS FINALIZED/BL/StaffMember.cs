@@ -8,7 +8,8 @@ namespace HMS_FINALIZED.BL
 {
     class StaffMember : Person
     {
-        private string duty;
+        private string designation;
+        public override string Designation { get => designation; set => designation = value; }
         public StaffMember()
         {
 
@@ -17,43 +18,10 @@ namespace HMS_FINALIZED.BL
         {
 
         }
-        public StaffMember(string name, string id, string contact, string city, string duty) : base(name, id, contact, city)
+        public StaffMember(string name, string id, string contact, string city, string designation) : base(name, id, contact, city)
         {
             base.role = "Staff";
-            this.duty = duty;
-        }
-        public override void setDuty(string duty)
-        {
-            this.duty = duty;
-        }
-        public override string getDuty()
-        {
-            return duty;
-        }
-        public static string assignRole(string option)
-        {
-            string role = "";
-            if (option == "1")
-            {
-                role = "Hotel receptionist";
-            }
-            else if (option == "2")
-            {
-                role = "Operations manager";
-            }
-            else if (option == "3")
-            {
-                role = "Security manager";
-            }
-            else if (option == "4")
-            {
-                role = "Hotel porter";
-            }
-            else if (option == "5")
-            {
-                role = "Room attendant";
-            }
-            return role;
+            this.designation = designation;
         }
     }
 }

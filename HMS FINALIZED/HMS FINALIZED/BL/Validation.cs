@@ -53,7 +53,7 @@ namespace HMS_FINALIZED.BL
         public static bool isValid(string name)
         {
             // Define the name requirements (at least 3 characters, first letter capitalized, remaining letters lowercase)
-            string pattern = @"^[A-Z][a-z]{2,}$";
+            string pattern = @"^[A-Za-z]{3,}( [A-Za-z]+)*$";
 
             // Check if the entered name matches the pattern
             bool isValid = Regex.IsMatch(name, pattern);

@@ -1,5 +1,5 @@
-1- For Hotel Management System
+1- Hotel Management System
  -> Open HMS FINALIZED
 
-2- For Elemental ARENA Game
+2- Elemental Arena Game
  -> Open ELEMENTAL ARENA
